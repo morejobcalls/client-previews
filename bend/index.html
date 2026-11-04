@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Website design directions prepared for Bend Fence &amp; Deck by MoreJobCalls.com.">
+<title>Bend Fence &amp; Deck · Website Directions · MoreJobCalls.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@600;800;900&family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Zilla+Slab:wght@600;700&family=Karla:wght@400;500;700&family=Anton&family=Work+Sans:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400;1,6..72,500&family=Mulish:wght@400;700;800&family=Libre+Caslon+Text&family=Mrs+Saint+Delafield&display=swap">
+<style>
+/* Layout: presentation shell (theme-aware) around four single-look website mockups shown in a resizable browser frame. */
+:root{
+  --bg:#f3f4f5; --panel:#ffffff; --fg:#1b1f23; --muted:#5d6670; --line:#dde1e5;
+  --accent:#0378a9; --accent-ink:#ffffff; --chip:#e7f1f6;
+  --ui:"Archivo","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121518;--panel:#1b1f24;--fg:#e8ebee;--muted:#9aa4ae;--line:#2c333a;--accent:#3aa6d6;--accent-ink:#0b1216;--chip:#16303d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121518;--panel:#1b1f24;--fg:#e8ebee;--muted:#9aa4ae;--line:#2c333a;--accent:#3aa6d6;--accent-ink:#0b1216;--chip:#16303d;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--ui);margin:0}
+.shell{max-width:1320px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 60px;display:grid;gap:22px}
+.intro{display:grid;gap:8px}
+.intro .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.intro h1{margin:0;font-size:clamp(24px,3.4vw,36px);line-height:1.1;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.intro p{margin:0;max-width:70ch;color:var(--muted)}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:1000px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:600px){.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tab{appearance:none;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:10px;padding:12px 14px;cursor:pointer;display:grid;gap:3px;min-width:0}
+.tab b{font-size:15px}
+.tab span{font-size:12.5px;color:var(--muted);line-height:1.35}
+.tab .k{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--accent)}
+.tab .new{display:inline-block;margin-left:6px;background:var(--chip);color:var(--accent);border-radius:4px;padding:0 5px;font-size:10px}
+.tab[aria-selected="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.tab:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel)}
+.seg button{appearance:none;border:0;background:transparent;color:var(--fg);padding:7px 14px;font:600 13px var(--ui);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.note{font-size:13px;color:var(--muted)}
+.browser{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);margin-inline:auto;width:100%;transition:max-width .25s ease;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.browser.phone{max-width:390px}
+.chrome{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line)}
+.chrome i{width:10px;height:10px;border-radius:50%;background:var(--line);display:block}
+.chrome .url{flex:1;min-width:0;font-size:12px;color:var(--muted);background:var(--bg);border-radius:6px;padding:4px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.viewport{container-type:inline-size;max-height:78vh;overflow-y:auto;overflow-x:hidden}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.why{grid-template-columns:1fr}}
+.why div{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.why h3{margin:0 0 4px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.why p{margin:0}
+.compare{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow-x:auto}
+.compare table{border-collapse:collapse;width:100%;min-width:1180px;font-size:13.5px}
+.compare th,.compare td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.compare thead th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.compare tbody tr:last-child td{border-bottom:0}
+.same{background:var(--chip);border-radius:10px;padding:16px 18px}
+.same h2,.section-h{margin:0 0 8px;font-size:18px}
+.same ul{margin:0;padding-left:18px;columns:2;column-gap:28px}
+@media (max-width:700px){.same ul{columns:1}}
+.mock[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ========== shared mockup helpers ========== */
+.mock{--g:clamp(18px,4cqi,56px)}
+.mock *{box-sizing:border-box}
+.mock img{display:block;max-width:100%;width:100%;height:100%;object-fit:cover}
+.mock .wrap{max-width:1180px;margin:0 auto;padding-inline:var(--g)}
+.mock a{text-decoration:none;color:inherit}
+.mock h1,.mock h2,.mock h3,.mock p{margin:0}
+.mock form input,.mock form select,.mock form textarea{width:100%;font:inherit;padding:11px 12px;border-radius:6px;border:1px solid #c9ced3;background:#fff;color:#1b1f23}
+.mock form label{display:grid;gap:4px;font-size:13px;font-weight:600}
+.mock .formnote{font-size:12px;opacity:.75}
+.ph{display:grid;place-items:center;text-align:center;font-size:12px;line-height:1.35;padding:10px;border:2px dashed currentColor;opacity:.6}
+
+/* ========== A · THE WORKSHOP (bold, dark, built like the logo) ========== */
+.mA{--ink:#111315;--steel:#1d2125;--paper:#f4f5f6;--blue:#0378a9;--blue2:#28a3d8;--dim:#9ba3ab;background:var(--ink);color:var(--paper);font:16px/1.6 "Barlow",Arial,sans-serif}
+.mA .disp{font-family:"Big Shoulders Display","Archivo",Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.92}
+.mA .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.mA .top img{height:34px;width:auto}
+.mA .nav{display:flex;gap:22px;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.mA .call{background:var(--blue);color:#fff;padding:10px 16px;font-weight:700;font-size:14px;white-space:nowrap}
+.mA .hero{position:relative;min-height:560px;display:grid;align-items:end}
+.mA .hero>img{position:absolute;inset:0;filter:brightness(.55)}
+.mA .hero .wrap{position:relative;padding-block:64px;display:grid;gap:18px;width:100%}
+.mA .kicker{display:inline-flex;gap:10px;align-items:center;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--blue2)}
+.mA .kicker::before{content:"";width:28px;height:3px;background:var(--blue2)}
+.mA h1{font-size:clamp(52px,10.5cqi,128px);font-weight:900;max-width:11ch}
+.mA h1 em{font-style:normal;color:var(--blue2)}
+.mA .hero p{max-width:52ch;font-size:18px;color:#dfe3e6}
+.mA .btns{display:flex;flex-wrap:wrap;gap:12px}
+.mA .btn{display:inline-block;padding:15px 22px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+.mA .btn.p{background:var(--blue);color:#fff}
+.mA .btn.s{border:2px solid #fff}
+.mA .strip{background:var(--blue);color:#fff}
+.mA .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-block:18px}
+.mA .strip b{display:block;font-family:"Big Shoulders Display",Impact,sans-serif;font-size:30px;line-height:1}
+.mA .strip span{font-size:13px;text-transform:uppercase;letter-spacing:.08em;opacity:.9}
+.mA section{padding-block:80px}
+.mA .h2{font-size:clamp(40px,6.4cqi,76px);font-weight:900;margin-bottom:28px}
+.mA .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.mA .svc a{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--steel)}
+.mA .svc a img{filter:brightness(.62);transition:transform .4s}
+.mA .svc a:hover img{transform:scale(1.04)}
+.mA .svc .lbl{position:absolute;left:16px;right:16px;bottom:16px}
+.mA .svc .lbl b{font-family:"Big Shoulders Display",Impact,sans-serif;font-size:34px;text-transform:uppercase;line-height:1;display:block}
+.mA .svc .lbl span{font-size:14px;color:#d6dadd}
+.mA .winter{background:var(--steel)}
+.mA .winter .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.mA .winter .pic{aspect-ratio:4/3;overflow:hidden}
+.mA .winter p{color:#cfd4d8;margin-bottom:14px;max-width:54ch}
+.mA blockquote{margin:0;border-left:4px solid var(--blue2);padding-left:16px;font-size:17px;color:#fff}
+.mA blockquote cite{display:block;font-style:normal;font-size:13px;color:var(--dim);margin-top:6px;text-transform:uppercase;letter-spacing:.08em}
+.mA .gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:3px}
+.mA .gal div{overflow:hidden}
+.mA .gal .w2{grid-column:span 2}.mA .gal .h2r{grid-row:span 2}
+.mA .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mA .stars{color:var(--blue2);letter-spacing:2px;font-size:15px;margin-bottom:8px}
+.mA .rev p{color:#d9dde0}
+.mA .rev cite{display:block;margin-top:10px;font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px}
+.mA .quote{background:var(--paper);color:var(--ink)}
+.mA .quote .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.mA .quote .h2{color:var(--ink)}
+.mA .quote form{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.mA .quote form .full{grid-column:1/-1}
+.mA .quote button{grid-column:1/-1;background:var(--blue);color:#fff;border:0;padding:16px;font:700 15px "Barlow",sans-serif;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+.mA .area{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.mA .area span{border:2px solid var(--ink);padding:5px 10px;font-weight:700;font-size:13px;text-transform:uppercase}
+.mA footer{padding-block:36px;color:var(--dim);font-size:14px}
+.mA footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+@container (max-width:760px){
+  .mA .nav{display:none}
+  .mA .hero{min-height:520px}
+  .mA .strip .wrap{grid-template-columns:1fr 1fr}
+  .mA .svc{grid-template-columns:1fr 1fr}
+  .mA .winter .wrap,.mA .quote .wrap{grid-template-columns:1fr;gap:28px}
+  .mA .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .mA .gal .w2{grid-column:span 2}
+  .mA .revs{grid-template-columns:1fr}
+  .mA .quote form{grid-template-columns:1fr}
+  .mA section{padding-block:56px}
+}
+
+
+/* ========== B · TIMBER & BASALT (lodge-craftsman: dark basalt, cedar, slab serif) ========== */
+.mT{--basalt:#1e2124;--rock:#2a2e32;--cedar:#b7733d;--cedar-l:#d79a62;--bone:#ede7dd;--mist:#a9b0b5;--blue:#3a9fd0;background:var(--basalt);color:var(--bone);font:16px/1.65 "Karla",Arial,sans-serif}
+.mT .slab{font-family:"Zilla Slab",Georgia,serif;font-weight:700;letter-spacing:-.005em}
+.mT .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;border-bottom:1px solid #3a3f44}
+.mT .top img{height:36px;width:auto}
+.mT .nav{display:flex;gap:26px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--mist)}
+.mT .cta{border:1.5px solid var(--cedar-l);color:var(--cedar-l);padding:10px 16px;font-weight:700;font-size:14px;white-space:nowrap}
+.mT .hero{display:grid;grid-template-columns:5fr 6fr;min-height:600px}
+.mT .hero .txt{padding:64px var(--g);display:grid;align-content:center;gap:20px;background:linear-gradient(180deg,var(--rock),var(--basalt))}
+.mT .rule{display:flex;align-items:center;gap:12px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cedar-l);font-weight:700}
+.mT .rule::after{content:"";height:1px;flex:1;max-width:90px;background:var(--cedar)}
+.mT h1{font-size:clamp(44px,6.2cqi,78px);line-height:1}
+.mT h1 em{font-style:normal;color:var(--cedar-l)}
+.mT .hero p{color:#c9c4bb;font-size:17.5px;max-width:44ch}
+.mT .b1{display:inline-block;background:var(--cedar);color:#fff;padding:16px 24px;font-weight:700;letter-spacing:.04em}
+.mT .meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;color:var(--mist)}
+.mT .meta b{color:var(--bone)}
+.mT .hero .pic{position:relative;overflow:hidden}
+.mT .plate{position:absolute;left:20px;bottom:20px;background:rgba(30,33,36,.88);border:1px solid var(--cedar);padding:10px 14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.mT .plate b{display:block;font-family:"Zilla Slab",Georgia,serif;letter-spacing:.02em;text-transform:none;font-size:17px;color:var(--cedar-l)}
+.mT section{padding-block:88px}
+.mT .h2{font-size:clamp(34px,4.6cqi,56px);line-height:1.05;margin:14px 0 30px;max-width:18ch}
+.mT .std{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#3a3f44;border:1px solid #3a3f44}
+.mT .std div{background:var(--basalt);padding:28px;display:grid;gap:10px;align-content:start}
+.mT .std i{font-style:normal;font-family:"Zilla Slab",Georgia,serif;font-size:44px;color:var(--cedar);line-height:1}
+.mT .std b{font-size:19px}
+.mT .std p{color:#b8b3aa;font-size:15px}
+.mT .std q{display:block;font-style:italic;color:var(--bone);font-size:14.5px;border-left:2px solid var(--cedar);padding-left:12px;margin-top:4px}
+.mT .std q::before,.mT .std q::after{content:none}
+.mT .std small{display:block;color:var(--mist);font-size:12.5px;margin-top:4px}
+.mT .work{background:var(--bone);color:var(--basalt)}
+.mT .work .rule{color:var(--cedar)}
+.mT .plates{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mT .plates figure{margin:0;display:grid;gap:10px}
+.mT .plates figure div{aspect-ratio:4/3;overflow:hidden}
+.mT .plates figcaption{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;border-top:2px solid var(--basalt);padding-top:8px;font-weight:700}
+.mT .plates figcaption span{color:var(--cedar)}
+.mT .owner{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:center}
+.mT .owner .ph{aspect-ratio:4/5;color:var(--cedar-l)}
+.mT .owner blockquote{margin:0;font-family:"Zilla Slab",Georgia,serif;font-size:clamp(22px,2.6cqi,30px);line-height:1.35}
+.mT .owner cite{display:block;margin-top:14px;font:700 13px "Karla",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--cedar-l);font-style:normal}
+.mT .owner p{color:#c9c4bb;margin-top:18px}
+.mT .q{background:var(--rock)}
+.mT .q .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.mT .q form{display:grid;gap:12px}
+.mT .q form input,.mT .q form select{border-radius:0;background:var(--basalt);color:var(--bone);border-color:#4a5055}
+.mT .q button{background:var(--cedar);color:#fff;border:0;padding:16px;font:700 15px "Karla",sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.mT .towns{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.mT .towns span{border:1px solid #4a5055;padding:6px 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mist)}
+.mT footer{padding-block:32px;color:var(--mist);font-size:13.5px}
+.mT footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+@container (max-width:760px){
+  .mT .nav{display:none}
+  .mT .hero{grid-template-columns:1fr}.mT .hero .pic{aspect-ratio:4/3}
+  .mT .std,.mT .plates{grid-template-columns:1fr}
+  .mT .owner,.mT .q .wrap{grid-template-columns:1fr;gap:30px}
+  .mT .owner .ph{aspect-ratio:1/1;max-width:320px}
+  .mT section{padding-block:56px}
+}
+
+/* ========== C · CASCADE OUTDOOR (Bend outdoor-brand: pine, sky, topo lines) ========== */
+.mO{--pine:#173a2e;--pine-d:#0f2a21;--sky:#0378a9;--snow:#f4f6f4;--sun:#e8a23a;--ink:#14231d;--gray:#56645d;background:var(--snow);color:var(--ink);font:16px/1.6 "Work Sans",Arial,sans-serif}
+.mO .an{font-family:"Anton","Archivo",Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;font-weight:400;line-height:.95}
+.mO .topo{background-color:var(--pine);background-image:repeating-radial-gradient(circle at 78% 30%,rgba(255,255,255,.06) 0 1px,transparent 1px 22px),repeating-radial-gradient(circle at 12% 90%,rgba(255,255,255,.05) 0 1px,transparent 1px 26px)}
+.mO .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.mO .top img{height:34px;width:auto}
+.mO .nav{display:flex;gap:24px;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#d6e2dc}
+.mO .cta{background:var(--sun);color:var(--ink);padding:11px 16px;font-weight:800;font-size:14px;border-radius:3px;white-space:nowrap}
+.mO .hero{color:#fff}
+.mO .hero .wrap:not(.top){display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding-block:40px 0}
+.mO .tag{display:inline-block;background:var(--sky);color:#fff;font-weight:700;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:2px}
+.mO h1{font-size:clamp(56px,9.4cqi,118px);margin:16px 0}
+.mO h1 span{color:var(--sun)}
+.mO .hero p{font-size:18px;color:#dbe6e0;max-width:44ch}
+.mO .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.mO .b1{background:var(--sun);color:var(--ink);padding:15px 22px;font-weight:800;border-radius:3px}
+.mO .b2{border:2px solid rgba(255,255,255,.7);padding:13px 20px;font-weight:700;border-radius:3px}
+.mO .stack{position:relative;aspect-ratio:4/5;align-self:end}
+.mO .stack>div{position:absolute;overflow:hidden;border-radius:4px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.mO .stack .s1{inset:0 18% 18% 0}
+.mO .stack .s2{right:0;bottom:6%;width:52%;aspect-ratio:3/4;border:6px solid var(--snow)}
+.mO .seasons{background:var(--pine-d);color:#fff}
+.mO .seasons .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.mO .seasons div{padding:22px 18px;border-left:1px solid rgba(255,255,255,.12)}
+.mO .seasons div:first-child{border-left:0}
+.mO .seasons b{display:block;font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:24px;letter-spacing:.02em}
+.mO .seasons span{font-size:13.5px;color:#b9cbc2}
+.mO .seasons .now{background:var(--sky)}
+.mO .seasons .now span{color:#e1f1f9}
+.mO section{padding-block:84px}
+.mO .h2{font-size:clamp(42px,6cqi,72px);margin-bottom:12px}
+.mO .sub{color:var(--gray);max-width:58ch;margin-bottom:34px}
+.mO .gear{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.mO .gear a{background:#fff;border-radius:4px;overflow:hidden;display:grid;align-content:start;border:1px solid #dfe5e1}
+.mO .gear .pic{aspect-ratio:1/1}
+.mO .gear .t{padding:14px 16px 18px}
+.mO .gear b{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:24px;display:block;letter-spacing:.02em}
+.mO .gear span{font-size:14px;color:var(--gray)}
+.mO .trail{display:flex;flex-wrap:wrap;gap:10px}
+.mO .trail span{background:var(--pine);color:#fff;font-weight:700;padding:9px 14px 9px 12px;border-radius:2px;position:relative;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+.mO .trail span::after{content:"";position:absolute;right:-10px;top:0;border-style:solid;border-width:19px 0 19px 10px;border-color:transparent transparent transparent var(--pine)}
+.mO .trail span{margin-right:12px}
+.mO .stoke{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mO .stoke div{background:#fff;border-top:4px solid var(--sun);padding:22px;border-radius:0 0 4px 4px}
+.mO .stoke p{font-size:16px}
+.mO .stoke cite{display:block;margin-top:12px;font-style:normal;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--gray)}
+.mO .q{color:#fff}
+.mO .q .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.mO .q p{color:#d6e2dc}
+.mO .q form{background:var(--snow);color:var(--ink);padding:26px;border-radius:4px;display:grid;gap:12px}
+.mO .q button{background:var(--sun);color:var(--ink);border:0;padding:15px;font:800 15px "Work Sans",sans-serif;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;border-radius:3px}
+.mO footer{background:var(--pine-d);color:#a9bdb3;padding-block:30px;font-size:13.5px}
+.mO footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+@container (max-width:760px){
+  .mO .nav{display:none}
+  .mO .hero .wrap:not(.top),.mO .q .wrap{grid-template-columns:1fr;gap:30px}
+  .mO .hero .wrap:not(.top){padding-bottom:30px}
+  .mO .seasons .wrap,.mO .gear{grid-template-columns:1fr 1fr}
+  .mO .seasons div:nth-child(3){border-left:0}
+  .mO .stoke{grid-template-columns:1fr}
+  .mO section{padding-block:56px}
+}
+
+/* ========== D · THE BLUEPRINT (design-meeting-first: drafting grid, callouts, spec sheets) ========== */
+.mP{--navy:#0d2b45;--navy-d:#08203a;--line:rgba(160,205,235,.16);--cyan:#7cc6ec;--blue:#0378a9;--paper:#f6f8fa;--ink:#122233;--gray:#56677a;background:var(--paper);color:var(--ink);font:16px/1.6 "Archivo",Arial,sans-serif}
+.mP .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+.mP .grid{background-color:var(--navy);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;color:#fff}
+.mP .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px;border-bottom:1px dashed rgba(124,198,236,.35)}
+.mP .top img{height:34px;width:auto}
+.mP .nav{display:flex;gap:24px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#c5dbe9}
+.mP .cta{background:#fff;color:var(--navy);padding:10px 16px;font-weight:700;font-size:14px;white-space:nowrap}
+.mP .hero .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;padding-block:60px}
+.mP .lbl{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.08em;color:var(--cyan);text-transform:uppercase}
+.mP h1{font-size:clamp(40px,5.6cqi,68px);line-height:1.04;font-weight:800;letter-spacing:-.02em;margin:14px 0 18px;text-wrap:balance}
+.mP .hero p{color:#d3e2ec;font-size:17.5px;max-width:46ch}
+.mP .b1{display:inline-block;margin-top:24px;background:var(--cyan);color:var(--navy-d);padding:15px 22px;font-weight:800}
+.mP .b1 small{font-family:"IBM Plex Mono",monospace;font-weight:500;margin-left:8px}
+.mP .draw{position:relative;border:1px solid rgba(124,198,236,.5);padding:10px;background:rgba(8,32,58,.5)}
+.mP .draw .pic{aspect-ratio:4/3;overflow:hidden}
+.mP .call{position:absolute;font-family:"IBM Plex Mono",monospace;font-size:11.5px;background:var(--navy-d);border:1px solid var(--cyan);color:#fff;padding:4px 8px;white-space:nowrap}
+.mP .call::before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;border:2px solid var(--cyan);background:var(--navy-d)}
+.mP .c1{left:6%;top:16%}.mP .c1::before{left:calc(100% + 26px);top:6px}
+.mP .c2{right:5%;top:40%}.mP .c2::before{right:calc(100% + 26px);top:6px}
+.mP .c3{left:10%;bottom:12%}.mP .c3::before{left:calc(100% + 30px);top:-14px}
+.mP .dim{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--cyan)}
+.mP .dim::before,.mP .dim::after{content:"";height:1px;flex:1;background:var(--cyan)}
+.mP .tb{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(124,198,236,.5);margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:11.5px}
+.mP .tb div{padding:6px 8px;border-left:1px solid rgba(124,198,236,.5);color:#c5dbe9}
+.mP .tb div:first-child{border-left:0}
+.mP .tb b{display:block;color:#fff;font-weight:600}
+.mP section{padding-block:84px}
+.mP .h2{font-size:clamp(32px,4.2cqi,50px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin:10px 0 30px;max-width:22ch;text-wrap:balance}
+.mP .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid #cfdae4}
+.mP .steps div{padding:24px;border-left:1px solid #cfdae4;display:grid;gap:8px;align-content:start;background:#fff}
+.mP .steps div:first-child{border-left:0}
+.mP .steps .mono{color:var(--blue);font-size:13px}
+.mP .steps b{font-size:18px}
+.mP .steps p{font-size:14.5px;color:var(--gray)}
+.mP .spec{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.mP .sheet{background:#fff;border:1px solid #cfdae4}
+.mP .sheet h3{font-size:15px;padding:14px 18px;border-bottom:1px solid #cfdae4;display:flex;justify-content:space-between;gap:10px}
+.mP .sheet h3 span{font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--gray);font-size:12.5px}
+.mP .sheet dl{margin:0;display:grid;grid-template-columns:auto 1fr}
+.mP .sheet dt,.mP .sheet dd{margin:0;padding:10px 18px;border-bottom:1px solid #e3e9ef;font-size:14.5px}
+.mP .sheet dt{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--gray);text-transform:uppercase;letter-spacing:.04em}
+.mP .sheet dd{font-weight:600;font-variant-numeric:tabular-nums}
+.mP .sheet blockquote{margin:0;padding:16px 18px;font-size:15px;color:var(--ink);background:#f0f5f9}
+.mP .sheet cite{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gray);margin-top:6px}
+.mP .mat{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mP .mat div{background:#fff;border:1px solid #cfdae4;display:grid}
+.mP .mat .pic{aspect-ratio:4/3}
+.mP .mat span{padding:8px 12px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--gray)}
+.mP .q .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.mP .q p{color:#d3e2ec}
+.mP .q form{background:#fff;color:var(--ink);padding:26px;display:grid;gap:12px;border:1px solid var(--cyan)}
+.mP .q form input,.mP .q form select{border-radius:0}
+.mP .q button{background:var(--navy);color:#fff;border:0;padding:15px;font:700 15px "Archivo",sans-serif;cursor:pointer}
+.mP footer{background:var(--navy-d);color:#9fb7c9;padding-block:28px;font-size:13px;font-family:"IBM Plex Mono",monospace}
+.mP footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;align-items:center}
+@container (max-width:760px){
+  .mP .nav{display:none}
+  .mP .hero .wrap,.mP .spec,.mP .q .wrap{grid-template-columns:1fr;gap:32px}
+  .mP .steps{grid-template-columns:1fr 1fr}
+  .mP .steps div:nth-child(3){border-left:0}
+  .mP .steps div:nth-child(n+3){border-top:1px solid #cfdae4}
+  .mP .tb{grid-template-columns:1fr 1fr}
+  .mP .tb div:nth-child(3){border-left:0}
+  .mP .call{font-size:10px}
+  .mP section{padding-block:56px}
+}
+
+/* ========== E · PROJECT FILES (proof-first: every job as a case file) ========== */
+.mJ{--ink:#1b2126;--paper:#ffffff;--tint:#f2f4f2;--blue:#0378a9;--olive:#6f7d54;--gray:#5f686f;--line:#e1e5e3;background:var(--paper);color:var(--ink);font:16px/1.6 "Hanken Grotesk",Arial,sans-serif}
+.mJ .nr{font-family:"Newsreader",Georgia,serif;font-weight:500}
+.mJ .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;border-bottom:1px solid var(--line)}
+.mJ .top img{height:34px;width:auto}
+.mJ .nav{display:flex;gap:26px;font-weight:500;font-size:15px}
+.mJ .cta{background:var(--ink);color:#fff;padding:10px 16px;border-radius:4px;font-weight:600;white-space:nowrap}
+.mJ .hero .wrap{padding-block:60px 30px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end}
+.mJ .k{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--olive)}
+.mJ h1{font-size:clamp(40px,6cqi,74px);line-height:1.02;margin-top:14px;text-wrap:balance}
+.mJ h1 i{color:var(--blue)}
+.mJ .hero p{color:var(--gray);font-size:17.5px;max-width:42ch}
+.mJ .score{display:flex;gap:14px;align-items:center;margin-top:18px}
+.mJ .score b{font-family:"Newsreader",Georgia,serif;font-size:46px;line-height:1;font-weight:500}
+.mJ .score span{font-size:14px;color:var(--gray);line-height:1.35}
+.mJ .filters{display:flex;flex-wrap:wrap;gap:8px;padding-block:8px 24px}
+.mJ .filters span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600}
+.mJ .filters span:first-child{background:var(--ink);color:#fff;border-color:var(--ink)}
+.mJ .files{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mJ .file{border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;align-content:start;background:#fff}
+.mJ .file .pic{aspect-ratio:4/3;position:relative}
+.mJ .file .no{position:absolute;left:12px;top:12px;background:#fff;border-radius:3px;padding:3px 8px;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+.mJ .file .t{padding:16px 18px 20px;display:grid;gap:10px}
+.mJ .file h3{font-size:19px;font-weight:700}
+.mJ .file dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13.5px}
+.mJ .file dt{color:var(--gray)}
+.mJ .file dd{margin:0;font-weight:600}
+.mJ .file blockquote{margin:0;border-top:1px solid var(--line);padding-top:10px;font-family:"Newsreader",Georgia,serif;font-size:16px;font-style:italic}
+.mJ .file cite{display:block;font:600 13px "Hanken Grotesk",sans-serif;font-style:normal;color:var(--gray);margin-top:4px}
+.mJ .note2{font-size:12.5px;color:var(--gray);margin-top:14px}
+.mJ section{padding-block:80px}
+.mJ .h2{font-size:clamp(30px,4cqi,46px);line-height:1.1;margin:10px 0 28px;text-wrap:balance}
+.mJ .feature{background:var(--tint)}
+.mJ .feature .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.mJ .tl{display:grid;gap:0;border-left:2px solid var(--blue);margin-left:6px}
+.mJ .tl div{position:relative;padding:0 0 22px 22px}
+.mJ .tl div::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--blue)}
+.mJ .tl b{display:block}
+.mJ .tl span{color:var(--gray);font-size:14.5px}
+.mJ .bigq{font-family:"Newsreader",Georgia,serif;font-size:clamp(22px,2.6cqi,30px);line-height:1.35}
+.mJ .bigq cite{display:block;font:600 14px "Hanken Grotesk",sans-serif;font-style:normal;color:var(--gray);margin-top:14px}
+.mJ .q .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.mJ .q form{display:grid;gap:12px;border:1px solid var(--line);padding:26px;border-radius:6px}
+.mJ .q button{background:var(--blue);color:#fff;border:0;border-radius:4px;padding:15px;font:700 15px "Hanken Grotesk",sans-serif;cursor:pointer}
+.mJ footer{border-top:1px solid var(--line);padding-block:28px;font-size:13.5px;color:var(--gray)}
+.mJ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+@container (max-width:760px){
+  .mJ .nav{display:none}
+  .mJ .hero .wrap,.mJ .feature .wrap,.mJ .q .wrap{grid-template-columns:1fr;gap:28px}
+  .mJ .files{grid-template-columns:1fr}
+  .mJ section{padding-block:56px}
+}
+
+/* ========== F · A LETTER FROM BRIAN (owner-led: personal accountability, stationery feel) ========== */
+.mL{--paper:#fbfaf6;--ink:#1c2836;--slate:#3f5366;--blue:#0378a9;--gold:#b98d3e;--line:#e4e0d6;background:var(--paper);color:var(--ink);font:16px/1.7 "Mulish",Arial,sans-serif}
+.mL .cs{font-family:"Libre Caslon Text",Georgia,serif}
+.mL .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px}
+.mL .top img{height:34px;width:auto}
+.mL .nav{display:flex;gap:26px;font-size:15px;color:var(--slate)}
+.mL .cta{color:var(--blue);font-weight:700;border-bottom:2px solid var(--blue);padding-bottom:2px;white-space:nowrap}
+.mL .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;padding-block:20px 0}
+.mL .hero .pic{min-height:560px;overflow:hidden}
+.mL .letter{background:#fff;border:1px solid var(--line);padding:48px;display:grid;gap:16px;align-content:center;box-shadow:0 20px 40px rgba(28,40,54,.07)}
+.mL .letter .k{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.mL .letter h1{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:clamp(32px,3.8cqi,46px);line-height:1.15;text-wrap:balance}
+.mL .letter p{color:var(--slate);font-size:16.5px}
+.mL .sig{font-family:"Mrs Saint Delafield","Libre Caslon Text",cursive;font-size:48px;line-height:1;color:var(--ink);margin-top:6px}
+.mL .sigsub{font-size:13.5px;color:var(--slate);margin-top:-8px}
+.mL .b1{display:inline-block;background:var(--ink);color:#fff;padding:15px 22px;font-weight:700;justify-self:start}
+.mL .draftnote{font-size:12px;color:var(--gold);font-weight:700}
+.mL .prom{border-block:1px solid var(--line);margin-top:56px}
+.mL .prom .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.mL .prom div{padding:22px 18px;border-left:1px solid var(--line)}
+.mL .prom div:first-child{border-left:0}
+.mL .prom b{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:19px;display:block}
+.mL .prom span{font-size:13.5px;color:var(--slate)}
+.mL section{padding-block:84px}
+.mL .h2{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:clamp(30px,4cqi,46px);line-height:1.15;margin:10px 0 28px;max-width:20ch;text-wrap:balance}
+.mL .k2{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.mL .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.mL .svc a{display:grid;gap:10px;align-content:start}
+.mL .svc .pic{aspect-ratio:3/4;overflow:hidden}
+.mL .svc b{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;font-size:21px}
+.mL .svc span{font-size:14px;color:var(--slate)}
+.mL .names{background:#fff;border-block:1px solid var(--line)}
+.mL .names .wrap{display:grid;grid-template-columns:1fr 2fr;gap:48px;align-items:start}
+.mL .roster{display:grid;grid-template-columns:repeat(2,1fr);gap:0 32px}
+.mL .roster div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.mL .roster b{font-weight:700}
+.mL .roster span{color:var(--slate);font-size:14px}
+.mL .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.mL .revs p{font-family:"Libre Caslon Text",Georgia,serif;font-size:17px;line-height:1.55}
+.mL .revs cite{display:block;margin-top:10px;font-style:normal;font-size:13.5px;font-weight:700;color:var(--slate)}
+.mL .q{background:var(--ink);color:#fff}
+.mL .q .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.mL .q .h2{color:#fff}
+.mL .q p{color:#c8d1da}
+.mL .q form{background:var(--paper);color:var(--ink);padding:28px;display:grid;gap:12px}
+.mL .q form input,.mL .q form select{border-radius:0}
+.mL .q button{background:var(--gold);color:#fff;border:0;padding:15px;font:800 15px "Mulish",sans-serif;cursor:pointer}
+.mL footer{padding-block:28px;font-size:13.5px;color:var(--slate)}
+.mL footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+@container (max-width:760px){
+  .mL .nav{display:none}
+  .mL .hero .wrap{grid-template-columns:1fr}
+  .mL .hero .pic{min-height:0;aspect-ratio:4/3}
+  .mL .letter{padding:28px}
+  .mL .prom .wrap,.mL .svc{grid-template-columns:1fr 1fr}
+  .mL .prom div:nth-child(3){border-left:0}
+  .mL .names .wrap,.mL .q .wrap{grid-template-columns:1fr;gap:28px}
+  .mL .roster,.mL .revs{grid-template-columns:1fr}
+  .mL section{padding-block:56px}
+}
+/* ========== G · BUILT TO LAST (modeled on the Paynter Construction site) ========== */
+.mE{--brand:#0b5a7d;--brand-d:#083f58;--brand-l:#0378a9;--gold:#c4974a;--warm:#f8f7f4;--stone:#e3e0d9;--ink:#16202a;--body:#4a5560;background:#fff;color:var(--ink);font:16px/1.65 "Inter",Arial,sans-serif}
+.mE .pf{font-family:"Playfair Display",Georgia,serif;font-weight:700;letter-spacing:-.005em}
+.mE .util{background:var(--brand);color:#fff;font-size:13.5px}
+.mE .util .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:8px;flex-wrap:wrap}
+.mE .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.mE .top img{height:40px;width:auto}
+.mE .nav{display:flex;gap:30px;font-weight:500;font-size:15px}
+.mE .nav a:first-child{color:var(--brand)}
+.mE .right{display:flex;gap:14px;align-items:center}
+.mE .tel{color:var(--brand);font-weight:600;white-space:nowrap}
+.mE .est{background:var(--brand);color:#fff;padding:11px 18px;border-radius:6px;font-weight:600;white-space:nowrap;box-shadow:0 4px 14px rgba(11,90,125,.3)}
+.mE .hero{position:relative;min-height:640px;display:flex;align-items:center;background:linear-gradient(rgba(8,63,88,.62),rgba(8,40,58,.78)),url(img/deck-gray-metal-rail-view.webp) center 45%/cover;color:#fff}
+.mE .hero .wrap{width:100%;padding-block:70px;display:grid;gap:18px;justify-items:start}
+.mE .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:500}
+.mE .pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.mE h1{font-size:clamp(44px,6.6cqi,80px);line-height:1.04;max-width:13ch}
+.mE h1 span{display:block;color:var(--gold)}
+.mE .hero p{max-width:50ch;font-size:18px;color:#e9eef1}
+.mE .btns{display:flex;flex-wrap:wrap;gap:14px}
+.mE .b1{background:var(--gold);color:#fff;padding:15px 26px;border-radius:6px;font-weight:700;box-shadow:0 8px 22px rgba(196,151,74,.35)}
+.mE .b2{border:1.5px solid #fff;padding:14px 24px;border-radius:6px;font-weight:700}
+.mE .tr{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14px;color:#dfe7eb}
+.mE .tr span::before{content:"●";color:var(--gold);margin-right:8px;font-size:10px;vertical-align:2px}
+.mE .bar{background:var(--brand)}
+.mE .bar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-block:26px;color:#fff}
+.mE .bar div{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center}
+.mE .bar i{font-style:normal;width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--gold);font-size:18px}
+.mE .bar b{display:block;font-size:15px}.mE .bar small{font-size:12.5px;color:#c9dbe4}
+.mE section{padding-block:96px}
+.mE .eb{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.mE .h2{font-size:clamp(32px,4.4cqi,50px);line-height:1.12;margin:12px 0 18px;text-wrap:balance}
+.mE .h2 span{color:var(--brand);display:block}
+.mE .lead{color:var(--body);max-width:60ch}
+.mE .story{background:var(--warm)}
+.mE .story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.mE .col{position:relative;padding:24px 0 0 24px}
+.mE .col .big{aspect-ratio:4/3;border-radius:14px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.12)}
+.mE .col .sm{position:absolute;left:0;top:0;width:34%;aspect-ratio:1/1;border-radius:10px;overflow:hidden;border:5px solid #fff;box-shadow:0 10px 24px rgba(0,0,0,.18);background:var(--stone);color:var(--brand)}
+.mE .col .sm .ph{height:100%;border:0;opacity:.9}
+.mE .story p{color:var(--body);margin-bottom:14px}
+.mE .sig{font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--brand);font-size:18px}
+.mE .center{text-align:center;display:grid;justify-items:center}
+.mE .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
+.mE .card{border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--stone);display:grid;align-content:start;transition:transform .25s,box-shadow .25s}
+.mE .card:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(0,0,0,.08)}
+.mE .card .pic{aspect-ratio:4/3}
+.mE .card .t{padding:18px 20px 22px;display:grid;gap:6px}
+.mE .card h3{font-family:"Playfair Display",Georgia,serif;font-size:23px}
+.mE .card p{font-size:14.5px;color:var(--body)}
+.mE .card em{font-style:normal;color:var(--brand);font-weight:600;font-size:14px}
+.mE .proj{background:var(--warm)}
+.mE .pg{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px;margin-top:40px}
+.mE .pg div{border-radius:12px;overflow:hidden}
+.mE .pg .t2{grid-row:span 2}.mE .pg .w2{grid-column:span 2}
+.mE .tg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;text-align:left}
+.mE .tc{background:#fff;border:1px solid var(--stone);border-radius:14px;padding:26px;display:grid;gap:12px;align-content:start}
+.mE .tc .st{color:var(--gold);letter-spacing:3px}
+.mE .tc p{color:var(--body);font-size:15.5px}
+.mE .tc cite{font-style:normal;display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:center;font-weight:600;font-size:14.5px}
+.mE .tc cite i{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700}
+.mE .tc cite small{display:block;font-weight:400;color:var(--body);font-size:13px}
+.mE .ns{border-top:1px solid var(--stone)}
+.mE .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 36px;margin-top:40px;text-align:left}
+.mE .feat div{display:grid;grid-template-columns:48px 1fr;gap:14px}
+.mE .feat i{font-style:normal;width:48px;height:48px;border-radius:10px;background:#e7f1f6;color:var(--brand);display:grid;place-items:center;font-size:20px}
+.mE .feat b{display:block;font-size:16.5px;margin-bottom:2px}
+.mE .feat p{font-size:14.5px;color:var(--body)}
+.mE .contact{background:linear-gradient(rgba(8,63,88,.92),rgba(8,63,88,.92)),url(img/fence-cedar-horizontal-side-yard-2.webp) center/cover;color:#fff}
+.mE .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.mE .contact .lead{color:#d5e3ea}
+.mE .contact ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.mE .contact li::before{content:"✓";color:var(--gold);font-weight:800;margin-right:10px}
+.mE .contact form{background:#fff;color:var(--ink);border-radius:14px;padding:30px;display:grid;gap:12px;box-shadow:0 24px 50px rgba(0,0,0,.25)}
+.mE .contact form h3{font-family:"Playfair Display",Georgia,serif;font-size:24px}
+.mE .contact .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mE .contact button{background:var(--gold);color:#fff;border:0;border-radius:6px;padding:15px;font:700 16px "Inter",sans-serif;cursor:pointer}
+.mE footer{background:var(--brand-d);color:#bcd0da;padding-block:40px;font-size:14px}
+.mE footer .wrap{display:flex;flex-wrap:wrap;gap:14px 32px;justify-content:space-between;align-items:center}
+.mE footer img{height:26px;width:auto}
+@container (max-width:760px){
+  .mE .nav,.mE .util,.mE .tel{display:none}
+  .mE .hero{min-height:560px}
+  .mE .bar .wrap{grid-template-columns:1fr 1fr}
+  .mE .story .wrap,.mE .contact .wrap{grid-template-columns:1fr;gap:36px}
+  .mE .cards{grid-template-columns:1fr 1fr}
+  .mE .pg{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .mE .tg,.mE .feat{grid-template-columns:1fr}
+  .mE section{padding-block:60px}
+}
+@container (max-width:460px){.mE .cards{grid-template-columns:1fr}.mE .contact .two{grid-template-columns:1fr}.mE .est{display:none}}
+/* ========== H · FAST QUOTE (bright, conversion-first; closest to current draft) ========== */
+.mD{--blue:#0378a9;--blue-d:#025a80;--blue-l:#e6f2f8;--ink:#14212b;--gray:#5a6873;--line:#dfe6eb;--go:#f2b51d;background:#fff;color:var(--ink);font:16px/1.6 "Archivo",Arial,sans-serif}
+.mD .util{background:var(--ink);color:#cfd8de;font-size:13px}
+.mD .util .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:7px;flex-wrap:wrap}
+.mD .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;border-bottom:1px solid var(--line)}
+.mD .top img{height:32px;width:auto}
+.mD .nav{display:flex;gap:22px;font-weight:600;font-size:15px}
+.mD .phone{display:grid;text-align:right;line-height:1.2;white-space:nowrap}
+.mD .phone small{font-size:12px;color:var(--gray)}
+.mD .phone b{font-size:20px;color:var(--blue)}
+.mD .hero{background:linear-gradient(90deg,rgba(10,25,35,.86) 0%,rgba(10,25,35,.55) 55%,rgba(10,25,35,.2) 100%),url(img/deck-composite-black-rail-patio-set.webp) center/cover;color:#fff}
+.mD .hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding-block:56px}
+.mD .pill{display:inline-block;background:var(--go);color:var(--ink);font-weight:800;font-size:13px;padding:5px 12px;border-radius:4px;text-transform:uppercase;letter-spacing:.04em}
+.mD h1{font-size:clamp(38px,5.4cqi,64px);line-height:1.05;font-weight:900;letter-spacing:-.015em;margin:14px 0;text-wrap:balance}
+.mD .hero p{font-size:18px;max-width:46ch;color:#e5edf2}
+.mD .ticks{display:grid;gap:8px;margin-top:20px;padding:0;list-style:none}
+.mD .ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.mD .ticks li::before{content:"✓";width:22px;height:22px;border-radius:50%;background:var(--go);color:var(--ink);display:grid;place-items:center;font-size:13px;font-weight:900;flex:none}
+.mD .card{background:#fff;color:var(--ink);border-radius:8px;padding:24px;display:grid;gap:12px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.mD .card h2{font-size:22px;font-weight:800;line-height:1.2}
+.mD .card .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mD .card button{background:var(--go);color:var(--ink);border:0;border-radius:6px;padding:15px;font:800 16px "Archivo",sans-serif;cursor:pointer}
+.mD .trust{border-bottom:1px solid var(--line)}
+.mD .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding-block:20px}
+.mD .trust div{display:grid;gap:2px}
+.mD .trust b{font-size:22px;font-weight:900;color:var(--blue)}
+.mD .trust span{font-size:13px;color:var(--gray)}
+.mD section{padding-block:72px}
+.mD .h2{font-size:clamp(30px,3.8cqi,44px);font-weight:900;letter-spacing:-.01em;line-height:1.1;text-align:center;margin-bottom:10px;text-wrap:balance}
+.mD .sub{text-align:center;color:var(--gray);max-width:60ch;margin:0 auto 36px}
+.mD .svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mD .sv{border:1px solid var(--line);border-radius:8px;overflow:hidden;display:grid;align-content:start}
+.mD .sv .pic{aspect-ratio:4/3}
+.mD .sv .t{padding:16px;display:grid;gap:6px}
+.mD .sv b{font-size:18px}
+.mD .sv span{font-size:14px;color:var(--gray)}
+.mD .sv em{font-style:normal;color:var(--blue);font-weight:700;font-size:14px}
+.mD .how{background:var(--blue-l)}
+.mD .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mD .steps div{background:#fff;border-radius:8px;padding:22px;display:grid;gap:8px}
+.mD .steps i{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:900}
+.mD .steps b{font-size:18px}.mD .steps p{font-size:14px;color:var(--gray)}
+.mD .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mD .rv{border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:8px;align-content:start}
+.mD .rv .st{color:var(--go);letter-spacing:2px}
+.mD .rv p{font-size:15px}
+.mD .rv cite{font-style:normal;font-weight:700;font-size:14px}
+.mD .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.mD .gal div{aspect-ratio:1/1;overflow:hidden;border-radius:6px}
+.mD .final{background:var(--blue);color:#fff;text-align:center}
+.mD .final .h2{color:#fff}
+.mD .final p{color:#dcecf5;max-width:52ch;margin:0 auto 24px}
+.mD .final a{display:inline-block;background:var(--go);color:var(--ink);font-weight:800;padding:16px 26px;border-radius:6px}
+.mD footer{background:var(--ink);color:#b7c3cb;padding-block:36px;font-size:14px}
+.mD footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+.mD footer b{color:#fff;display:block;margin-bottom:6px}
+.mD .sticky{display:none}
+@container (max-width:760px){
+  .mD .nav,.mD .util{display:none}
+  .mD .hero .wrap{grid-template-columns:1fr;padding-block:36px}
+  .mD .trust .wrap{grid-template-columns:1fr 1fr}
+  .mD .svc,.mD .gal{grid-template-columns:1fr 1fr}
+  .mD .steps,.mD .revs,.mD footer .wrap{grid-template-columns:1fr}
+  .mD section{padding-block:52px}
+  .mD .sticky{display:grid;grid-template-columns:1fr 1fr;position:sticky;bottom:0;z-index:2}
+  .mD .sticky a{padding:14px;text-align:center;font-weight:800}
+  .mD .sticky a:first-child{background:var(--ink);color:#fff}
+  .mD .sticky a:last-child{background:var(--go);color:var(--ink)}
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="shell">
+  <header class="intro">
+    <div class="eyebrow">Prepared by MoreJobCalls.com for Bend Fence &amp; Deck · new website · pick a direction</div>
+    <h1>Eight ways the new bendfenceanddeck.com could look</h1>
+    <p>Same pages, same SEO plan, same lead form into your CRM. Only the look and feel changes. Every photo is one of your real jobs and every review is word for word from Google. Headlines are draft copy. Each one is designed for the homeowner who collects a few bids, reads every review, and pays for craftsmanship and a crew they trust.</p>
+  </header>
+
+  <div class="tabs" role="tablist" aria-label="Website direction">
+    <button class="tab" role="tab" id="t-a" data-v="a" aria-selected="true"><span class="k">OPTION A</span><b>The Workshop</b><span>Bold and dark, built off the logo. Confident and rugged.</span></button>
+    <button class="tab" role="tab" id="t-b" data-v="b" aria-selected="false"><span class="k">OPTION B<span class=new>NEW</span></span><b>Timber &amp; Basalt</b><span>Lodge-craftsman: cedar on dark basalt, a written standard backed by reviews.</span></button>
+    <button class="tab" role="tab" id="t-c" data-v="c" aria-selected="false"><span class="k">OPTION C<span class=new>NEW</span></span><b>Cascade Outdoor</b><span>Bend outdoor-brand energy. Seasons, trail signs, "more time out back".</span></button>
+    <button class="tab" role="tab" id="t-d" data-v="d" aria-selected="false"><span class="k">OPTION D<span class=new>NEW</span></span><b>The Blueprint</b><span>The design meeting as the hero: drafting grid, callouts, real spec sheets.</span></button>
+    <button class="tab" role="tab" id="t-e" data-v="e" aria-selected="false"><span class="k">OPTION E<span class=new>NEW</span></span><b>Project Files</b><span>Proof-first: every job as a case file with the review that came after.</span></button>
+    <button class="tab" role="tab" id="t-f" data-v="f" aria-selected="false"><span class="k">OPTION F<span class=new>NEW</span></span><b>A Letter from Brian</b><span>Owner-led. Brian's note, his signature, every crew member by name.</span></button>
+    <button class="tab" role="tab" id="t-g" data-v="g" aria-selected="false"><span class="k">OPTION G</span><b>Built to Last</b><span>Modeled on the Paynter Construction site, in Bend's blue.</span></button>
+    <button class="tab" role="tab" id="t-h" data-v="h" aria-selected="false"><span class="k">OPTION H</span><b>Fast Quote</b><span>Bright and built to convert. Closest to the draft in progress.</span></button>
+  </div>
+
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Preview size">
+      <button id="sz-desk" aria-pressed="true">Desktop</button>
+      <button id="sz-phone" aria-pressed="false">Phone</button>
+    </div>
+    <span class="note">Scroll inside the frame to see the full homepage.</span>
+  </div>
+
+  <div class="browser" id="browser">
+    <div class="chrome"><i></i><i></i><i></i><div class="url">bendfenceanddeck.com</div></div>
+    <div class="viewport" id="vp">
+
+<!-- ================= A ================= -->
+<div class="mock mA" id="m-a">
+  <div class="wrap top"><img src="img/logo-light.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Covers &amp; Pergolas</a><a>Our Work</a><a>About</a></nav><a class="call">(541) 647-7086</a></div>
+  <div class="hero"><img src="img/covered-patio-timber-frame-night.webp" alt="Timber-frame covered patio lit at night">
+    <div class="wrap">
+      <span class="kicker">Central Oregon · Family owned</span>
+      <h1 class="disp">Built for the <em>High Desert.</em></h1>
+      <p>Fences, decks and covered patios built to handle snow, sun and the dry Central Oregon wind. Designed with you and cleaned up every day.</p>
+      <div class="btns"><a class="btn p">Book a custom design meeting</a><a class="btn s">See our work</a></div>
+    </div>
+  </div>
+  <div class="strip"><div class="wrap"><div><b>4.8 ★</b><span>23 Google reviews</span></div><div><b>CCB 204674</b><span>Licensed in Oregon</span></div><div><b>Year-round</b><span>We build in winter</span></div><div><b>Free</b><span>Design meeting &amp; estimate</span></div></div></div>
+  <section><div class="wrap">
+    <h2 class="disp h2">What we build</h2>
+    <div class="svc">
+      <a><img src="img/fence-black-horizontal-modern.webp" alt="Black horizontal fence"><div class="lbl"><b>Fences</b><span>Cedar, horizontal, metal &amp; corrugated</span></div></a>
+      <a><img src="img/deck-stairs-composite-metal-rail.webp" alt="Composite deck stairs"><div class="lbl"><b>Decks</b><span>New, replacement, Trex &amp; TimberTech</span></div></a>
+      <a><img src="img/pergola-red-cedar-pine-yard.webp" alt="Cedar pergola"><div class="lbl"><b>Covers</b><span>Covered patios, pergolas, porches</span></div></a>
+      <a><img src="img/porch-covered-stone-columns.webp" alt="Covered porch with stone columns"><div class="lbl"><b>Exterior</b><span>Hardie &amp; cedar siding, windows</span></div></a>
+    </div>
+  </div></section>
+  <section class="winter"><div class="wrap">
+    <div class="pic"><img src="img/fence-corrugated-metal-cedar-frame-snow.webp" alt="Corrugated metal fence in snow"></div>
+    <div>
+      <span class="kicker">Winter build season</span>
+      <h2 class="disp h2" style="margin-top:12px">Snow doesn't stop us.</h2>
+      <p>Winter is the best time to get on the schedule. Design it now, build it while everyone else waits, and use it the first warm weekend of spring.</p>
+      <blockquote>"All of the work was done in January and some of it was during a snow storm."<cite>John Jordan · Trex deck replacement, Bend</cite></blockquote>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <h2 class="disp h2">Recent work</h2>
+    <div class="gal">
+      <div class="w2 h2r"><img src="img/deck-composite-picture-frame-border.webp" alt=""></div>
+      <div class="w2"><img src="img/fence-cedar-horizontal-side-yard.webp" alt=""></div>
+      <div><img src="img/deck-gray-metal-rail-view.webp" alt=""></div>
+      <div><img src="img/fence-cedar-privacy-snow.webp" alt=""></div>
+      <div class="w2"><img src="img/pergola-stained-cedar-patio.webp" alt=""></div>
+      <div class="w2"><img src="img/fence-gray-stained-board-on-board.webp" alt=""></div>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">
+    <h2 class="disp h2">Straight from Google</h2>
+    <div class="revs">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Every day the crew cleaned up the site like it was in their own home. So appreciated!"</p><cite>Barry Heath · Trex deck</cite></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Excellent craftsmanship and good communication throughout the project. Many thanks to Brian for design and material recommendations."</p><cite>Karen Gnass · Trex + cable rail</cite></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Thomas and Loren did a fantastic job on our new privacy fence in short time."</p><cite>Douglas Zinn · Privacy fence</cite></div>
+    </div>
+  </div></section>
+  <section class="quote"><div class="wrap">
+    <div><h2 class="disp h2">Start with a design meeting</h2><p>Brian walks your yard with you, helps you pick materials and colors, and gives you a written estimate. No pressure, no charge.</p>
+      <div class="area"><span>Bend</span><span>Redmond</span><span>Sisters</span><span>Sunriver</span><span>La Pine</span><span>Prineville</span><span>Tumalo</span><span>Powell Butte</span></div></div>
+    <form><label>Name<input id="a-n" placeholder="Your name"></label><label>Phone<input id="a-p" placeholder="(541) 000-0000"></label><label class="full">Project<select id="a-s"><option>Fence</option><option>Deck</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><label class="full">Town<input id="a-t" placeholder="Bend"></label><button type="submit">Book my design meeting</button><span class="formnote full">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><img src="img/logo-light.png" alt="" style="height:26px;width:auto"><span>(541) 647-7086 · info@bendfenceanddeck.com</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+
+<!-- ================= B · TIMBER & BASALT ================= -->
+<div class="mock mT" id="m-b" hidden>
+  <div class="wrap top"><img src="img/logo-light.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Covers</a><a>Work</a><a>About</a></nav><a class="cta">(541) 647-7086</a></div>
+  <div class="hero">
+    <div class="txt">
+      <span class="rule">Bend · Central Oregon</span>
+      <h1 class="slab">Built right. Built <em>to last out here.</em></h1>
+      <p>Cedar, composite and steel, put together by a family crew that knows what a High Desert winter does to a fence and a deck.</p>
+      <a class="b1">Book a custom design meeting</a>
+      <div class="meta"><span><b>4.8</b> on Google · 23 reviews</span><span><b>CCB</b> #204674</span><span><b>Family</b> owned</span></div>
+    </div>
+    <div class="pic"><img src="img/fence-cedar-horizontal-side-yard-2.webp" alt="Horizontal cedar fence"><div class="plate">Project<b>Horizontal cedar fence</b></div></div>
+  </div>
+  <section><div class="wrap">
+    <span class="rule">The standard</span>
+    <h2 class="slab h2">Three things every customer can count on.</h2>
+    <div class="std">
+      <div><i>01</i><b>Brian designs it with you</b><p>Layout, materials and colors are worked out together before a board is cut.</p><q>"Many thanks to Brian for design and material recommendations."</q><small>Karen Gnass · Trex deck + cable rail</small></div>
+      <div><i>02</i><b>We show up when we say</b><p>The crew is on site on schedule, every day of the job.</p><q>"The crew was very courteous, showed up every day on time and very professional."</q><small>Dan Cuff · Deck replacement</small></div>
+      <div><i>03</i><b>The yard gets cleaned daily</b><p>Your property is left tidy at the end of every workday.</p><q>"Everyday the crew cleaned up the site like it was in their own home."</q><small>Barry Heath · Trex deck</small></div>
+    </div>
+  </div></section>
+  <section class="work"><div class="wrap">
+    <span class="rule">Recent work</span>
+    <h2 class="slab h2">Real jobs. Real Central Oregon yards.</h2>
+    <div class="plates">
+      <figure><div><img src="img/deck-gray-black-rail-juniper.webp" alt=""></div><figcaption>Composite deck <span>Black rail</span></figcaption></figure>
+      <figure><div><img src="img/fence-corrugated-metal-cedar-frame.webp" alt=""></div><figcaption>Corrugated fence <span>Cedar frame</span></figcaption></figure>
+      <figure><div><img src="img/pergola-red-cedar-pine-yard.webp" alt=""></div><figcaption>Pergola <span>Red cedar</span></figcaption></figure>
+    </div>
+  </div></section>
+  <section><div class="wrap owner">
+    <div class="ph">Photo of Brian on a job site</div>
+    <div><span class="rule">The owner</span>
+      <blockquote>"Brian was excellent at communicating through the entire project… I can't recommend Brian and his team higher."<cite>John Jordan · Trex deck, Bend</cite></blockquote>
+      <p>Brian Wallace has lived in Bend for more than 30 years. He meets every customer, designs every project, and runs the crew of family and long-time carpenters who build it.</p></div>
+  </div></section>
+  <section class="q"><div class="wrap">
+    <div><span class="rule">Start here</span><h2 class="slab h2">Custom design meeting &amp; free estimate.</h2><p style="color:#c9c4bb">Brian walks the yard with you and puts a written estimate in your hands.</p>
+      <div class="towns"><span>Bend</span><span>Redmond</span><span>Sisters</span><span>Sunriver</span><span>La Pine</span><span>Prineville</span><span>Tumalo</span><span>Powell Butte</span></div></div>
+    <form><label>Name<input id="b-n"></label><label>Phone<input id="b-p"></label><label>Project<select id="b-s"><option>Fence</option><option>Deck</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><button type="submit">Book my design meeting</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><span>Bend Fence &amp; Deck · (541) 647-7086</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= C · CASCADE OUTDOOR ================= -->
+<div class="mock mO" id="m-c" hidden>
+  <div class="topo hero">
+    <div class="wrap top"><img src="img/logo-light.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Covers</a><a>Projects</a><a>Reviews</a></nav><a class="cta">Free estimate</a></div>
+    <div class="wrap">
+      <div style="padding-bottom:48px"><span class="tag">Made in Central Oregon</span>
+        <h1 class="an">More time <span>out back.</span></h1>
+        <p>Decks, fences and covered patios for people who'd rather be outside. Designed with you, built by a local family crew, ready for the first warm weekend.</p>
+        <div class="btns"><a class="b1">Book a design meeting</a><a class="b2">See projects</a></div></div>
+      <div class="stack"><div class="s1"><img src="img/covered-deck-mountain-view.webp" alt="Covered deck with mountain view"></div><div class="s2"><img src="img/fence-cedar-privacy-snow.webp" alt="Cedar fence in snow"></div></div>
+    </div>
+  </div>
+  <div class="seasons"><div class="wrap">
+    <div class="now"><b>Winter</b><span>Design it and build it now. We're booking.</span></div>
+    <div><b>Spring</b><span>Use it the first warm weekend.</span></div>
+    <div><b>Summer</b><span>Live out back all season.</span></div>
+    <div><b>Fall</b><span>Plan the next project.</span></div>
+  </div></div>
+  <section><div class="wrap">
+    <h2 class="an h2">What we build</h2><p class="sub">Built for snow, sun and wind. Picked with you at the design meeting.</p>
+    <div class="gear">
+      <a><div class="pic"><img src="img/deck-composite-two-tone-black-rail.webp" alt=""></div><div class="t"><b>Decks</b><span>Trex, TimberTech, wood. New or replacement.</span></div></a>
+      <a><div class="pic"><img src="img/fence-black-horizontal-modern-2.webp" alt=""></div><div class="t"><b>Fences</b><span>Cedar, horizontal, metal, corrugated.</span></div></a>
+      <a><div class="pic"><img src="img/pergola-stained-cedar-patio.webp" alt=""></div><div class="t"><b>Covers</b><span>Pergolas, covered patios, porches.</span></div></a>
+      <a><div class="pic"><img src="img/porch-covered-stone-columns.webp" alt=""></div><div class="t"><b>Exterior</b><span>Hardie, cedar, shake siding. Windows.</span></div></a>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">
+    <h2 class="an h2">Neighbors outside more</h2><p class="sub">Straight from our Google reviews (4.8 from 23).</p>
+    <div class="stoke">
+      <div><p>"It has completely changed how we use our outdoor space… a big deal here in Central Oregon where we try to soak up every beautiful day we get!"</p><cite>Amber Boyle · Trex deck</cite></div>
+      <div><p>"It's like we've added another living room to our home. The color is gorgeous!"</p><cite>Alanna Godsey · Deck</cite></div>
+      <div><p>"We are super pleased with the end product that allows us to feel secure in having a deck in a wildfire risk area."</p><cite>Wendy Edde · Deck</cite></div>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">
+    <h2 class="an h2" style="font-size:clamp(32px,4cqi,48px)">Where we build</h2>
+    <div class="trail"><span>Bend</span><span>Redmond</span><span>Sisters</span><span>Sunriver</span><span>La Pine</span><span>Prineville</span><span>Tumalo</span><span>Powell Butte</span></div>
+  </div></section>
+  <section class="topo q"><div class="wrap">
+    <div><h2 class="an h2">Get on the winter list</h2><p>Book a free custom design meeting. Brian comes out, walks the yard and writes up an estimate.</p></div>
+    <form><label>Name<input id="c-n"></label><label>Phone<input id="c-p"></label><label>Project<select id="c-s"><option>Deck</option><option>Fence</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><button type="submit">Book my design meeting</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><span>Bend Fence &amp; Deck · (541) 647-7086 · info@bendfenceanddeck.com</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= D · THE BLUEPRINT ================= -->
+<div class="mock mP" id="m-d" hidden>
+  <div class="grid">
+    <div class="wrap top"><img src="img/logo-light.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Covers</a><a>How we work</a><a>Projects</a></nav><a class="cta">Book a design meeting</a></div>
+    <div class="wrap hero"><div class="wrap" style="padding-inline:0">
+      <div><span class="lbl">Sheet 01 · Your project starts here</span>
+        <h1>Every great deck starts as a drawing.</h1>
+        <p>Brian sits down with you, sketches the layout, and helps you choose the materials and colors. You see the plan and the price before anything gets built.</p>
+        <a class="b1">Book a custom design meeting <small>// free</small></a></div>
+      <div><div class="draw"><div class="pic"><img src="img/deck-composite-picture-frame-border.webp" alt="Composite deck with picture-frame border"></div>
+          <span class="call c1">Composite decking</span><span class="call c2">Black metal rail</span><span class="call c3">Picture-frame border</span></div>
+        <div class="dim">Designed with you · built by our crew</div>
+        <div class="tb"><div><b>Client</b>You</div><div><b>Designed with</b>Brian Wallace</div><div><b>Area</b>Central Oregon</div><div><b>License</b>CCB 204674</div></div></div>
+    </div></div>
+  </div>
+  <section><div class="wrap">
+    <span class="lbl" style="color:var(--blue)">How a project runs</span>
+    <h2 class="h2">Four steps, and you see each one coming.</h2>
+    <div class="steps">
+      <div><span class="mono">01 / Meet</span><b>Design meeting</b><p>Brian walks the yard with you and listens to how you want to use it.</p></div>
+      <div><span class="mono">02 / Plan</span><b>Layout &amp; materials</b><p>Board, rail and color choices, matched to your house and budget.</p></div>
+      <div><span class="mono">03 / Price</span><b>Written estimate</b><p>A clear number before anything starts. No pressure to sign.</p></div>
+      <div><span class="mono">04 / Build</span><b>On schedule, cleaned daily</b><p>The crew shows up when we say and leaves the site tidy every day.</p></div>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap spec">
+    <div class="sheet">
+      <h3>Project spec: third-floor deck replacement <span>Bend, OR</span></h3>
+      <dl>
+        <dt>Size</dt><dd>245 sq ft, 20 ft off the ground</dd>
+        <dt>Old deck</dt><dd>18-year-old ceramic tile, badly rotted</dd>
+        <dt>New deck</dt><dd>Trex decking</dd>
+        <dt>Structure</dt><dd>17 ft beam replaced, set with a motorized boom</dd>
+        <dt>Extras</dt><dd>Rain Escape under-deck drainage; iron railing powder coated and reinstalled</dd>
+        <dt>When</dt><dd>January, partly in a snow storm</dd>
+        <dt>Duration</dt><dd>2.5 weeks</dd>
+      </dl>
+      <blockquote>"The final installation is beautiful and the drainage system is excellent—just amazing craftsmanship by Brian and his team."<cite>John Jordan · Google review</cite></blockquote>
+    </div>
+    <div><span class="lbl" style="color:var(--blue)">Materials we work in</span>
+      <h2 class="h2" style="margin-bottom:20px">Pick it in person, with someone who's built it.</h2>
+      <div class="mat">
+        <div><div class="pic"><img src="img/fence-cedar-horizontal-lawn.webp" alt=""></div><span>Cedar · horizontal</span></div>
+        <div><div class="pic"><img src="img/fence-corrugated-metal-cedar-frame-snow.webp" alt=""></div><span>Corrugated metal · cedar frame</span></div>
+        <div><div class="pic"><img src="img/deck-stairs-composite-metal-rail.webp" alt=""></div><span>Composite · metal rail</span></div>
+        <div><div class="pic"><img src="img/fence-gray-stained-board-on-board.webp" alt=""></div><span>Stained board-on-board</span></div>
+      </div></div>
+  </div></section>
+  <section class="grid q"><div class="wrap">
+    <div><span class="lbl">Sheet 02 · Your turn</span><h2 class="h2" style="color:#fff">Book your custom design meeting &amp; free estimate.</h2><p>Bend, Redmond, Sisters, Sunriver, La Pine, Prineville, Tumalo and Powell Butte.</p></div>
+    <form><label>Name<input id="d-n"></label><label>Phone<input id="d-p"></label><label>Project<select id="d-s"><option>Deck</option><option>Fence</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><label>Town<input id="d-t" placeholder="Bend"></label><button type="submit">Book my design meeting</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><span>BEND FENCE &amp; DECK · (541) 647-7086</span><span>OREGON CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= E · PROJECT FILES ================= -->
+<div class="mock mJ" id="m-e" hidden>
+  <div class="wrap top"><img src="img/logo.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Projects</a><a>Fences</a><a>Decks</a><a>Reviews</a><a>About</a></nav><a class="cta">Book a design meeting</a></div>
+  <div class="hero"><div class="wrap">
+    <div><span class="k">The project files</span><h1 class="nr">Don't take our word for it. <i>Read the job files.</i></h1></div>
+    <div><p>Every project on this site shows what we built, where, how long it took, and what the homeowner said when we finished.</p>
+      <div class="score"><b>4.8</b><span>from 23 Google reviews<br>Oregon CCB #204674</span></div></div>
+  </div></div>
+  <div class="wrap"><div class="filters"><span>All projects</span><span>Decks</span><span>Fences</span><span>Covers &amp; porches</span><span>Siding</span><span>Bend</span><span>Sunriver</span></div>
+    <div class="files">
+      <div class="file"><div class="pic"><img src="img/deck-composite-black-rail-front.webp" alt=""><span class="no">FILE 014</span></div><div class="t"><h3>Wrap-around deck rebuild</h3><dl><dt>Where</dt><dd>Sunriver</dd><dt>Scope</dt><dd>Tear-out and full rebuild</dd></dl><blockquote>"They ripped out an old wrap around deck at our place in Sunriver and rebuilt it beautifully."<cite>Philipp Mayhew</cite></blockquote></div></div>
+      <div class="file"><div class="pic"><img src="img/fence-gray-stained-board-on-board-2.webp" alt=""><span class="no">FILE 021</span></div><div class="t"><h3>Privacy fence</h3><dl><dt>Crew</dt><dd>Thomas &amp; Loren</dd><dt>Timeline</dt><dd>Short</dd></dl><blockquote>"Thomas and Loren did a fantastic job on our new privacy fence in short time."<cite>Douglas Zinn</cite></blockquote></div></div>
+      <div class="file"><div class="pic"><img src="img/deck-gray-metal-rail-view.webp" alt=""><span class="no">FILE 009</span></div><div class="t"><h3>Deck upgrade for a refinance</h3><dl><dt>Booked</dt><dd>Within a week</dd><dt>Build</dt><dd>Two days</dd></dl><blockquote>"They were able to get me in within a week and had my deck done in two days. It wasn't just thrown together either."<cite>Shawn Cross</cite></blockquote></div></div>
+    </div>
+    <p class="note2">Mockup note: photos here are samples. On the live site each file shows that job's own photos, and reviews are only paired with the job they describe.</p>
+  </div>
+  <section class="feature"><div class="wrap">
+    <div><span class="k">Featured file</span><h2 class="nr h2">A third-floor deck, rebuilt in January.</h2>
+      <div class="tl"><div><b>Design visit</b><span>Brian's first visit to plan the replacement</span></div><div><b>Demolition</b><span>18-year-old rotted tile deck removed, 17 ft beam replaced</span></div><div><b>Build</b><span>Trex decking plus Rain Escape drainage, some of it in a snow storm</span></div><div><b>Done</b><span>2.5 weeks start to finish. He hired them again for the second half.</span></div></div></div>
+    <blockquote class="bigq">"The entire project from Brian's first visit, through demolition, to the finish was excellently executed."<cite>John Jordan · Bend · Google review</cite></blockquote>
+  </div></section>
+  <section class="q"><div class="wrap">
+    <div><span class="k">Start your file</span><h2 class="nr h2">Book a custom design meeting and free estimate.</h2><p style="color:var(--gray)">Serving Bend, Redmond, Sisters, Sunriver, La Pine, Prineville, Tumalo and Powell Butte.</p></div>
+    <form><label>Name<input id="e-n"></label><label>Phone<input id="e-p"></label><label>Project<select id="e-s"><option>Deck</option><option>Fence</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><button type="submit">Book my design meeting</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><span>Bend Fence &amp; Deck · (541) 647-7086 · info@bendfenceanddeck.com</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= F · A LETTER FROM BRIAN ================= -->
+<div class="mock mL" id="m-f" hidden>
+  <div class="wrap top"><img src="img/logo.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Covers</a><a>Our Crew</a><a>Reviews</a></nav><a class="cta">(541) 647-7086</a></div>
+  <div class="hero"><div class="wrap">
+    <div class="pic"><img src="img/covered-deck-mountain-view.webp" alt="Covered deck with a mountain view"></div>
+    <div class="letter">
+      <span class="k">A note from the owner</span>
+      <h1>"If my name is on your fence, I want you proud of it."</h1>
+      <p>I've lived in Bend for more than 30 years. My family and I build fences, decks and covered patios for our neighbors here, and I still meet every customer myself to design the project with them.</p>
+      <p>You'll get a written estimate, a crew that shows up when we say, and a yard that's cleaned up every night. If something isn't right, call me.</p>
+      <div class="sig">Brian Wallace</div><div class="sigsub">Owner, Bend Fence &amp; Deck · (541) 647-7086</div>
+      <a class="b1">Book a design meeting with Brian</a>
+      <span class="draftnote">Draft letter for Brian to rewrite in his own words.</span>
+    </div>
+  </div></div>
+  <div class="prom"><div class="wrap">
+    <div><b>Designed with Brian</b><span>Every project, in person</span></div>
+    <div><b>Written estimate</b><span>Free, no pressure</span></div>
+    <div><b>Cleaned up daily</b><span>Every workday</span></div>
+    <div><b>Licensed</b><span>Oregon CCB #204674</span></div>
+  </div></div>
+  <section><div class="wrap">
+    <span class="k2">What we build</span><h2 class="h2">Fences and decks, and the outdoor work around them.</h2>
+    <div class="svc">
+      <a><div class="pic"><img src="img/fence-dark-horizontal-board-pines.webp" alt=""></div><b>Fences</b><span>Cedar, horizontal, metal</span></a>
+      <a><div class="pic"><img src="img/deck-gray-black-rail-juniper.webp" alt=""></div><b>Decks</b><span>Trex, TimberTech, wood</span></a>
+      <a><div class="pic"><img src="img/pergola-red-cedar-pine-yard.webp" alt=""></div><b>Covers</b><span>Pergolas, patios, porches</span></a>
+      <a><div class="pic"><img src="img/porch-covered-stone-columns.webp" alt=""></div><b>Siding &amp; windows</b><span>Hardie, cedar, shake</span></a>
+    </div>
+  </div></section>
+  <section class="names"><div class="wrap">
+    <div><span class="k2">The crew</span><h2 class="h2">Names you'll know by the end of the job.</h2></div>
+    <div class="roster">
+      <div><b>Brian Wallace</b><span>Owner &amp; designer</span></div><div><b>Jessica Matthews</b><span>Office</span></div>
+      <div><b>Jon Wallace</b><span>Crew lead</span></div><div><b>Jon Young</b><span>Crew lead</span></div>
+      <div><b>Obie Wallace</b><span>Crew lead</span></div><div><b>Thomas Wallace</b><span>Crew lead</span></div>
+      <div><b>Loren Anderson</b><span>Carpenter</span></div><div><b>Chris Cabagbag</b><span>Carpenter</span></div>
+      <div><b>Kevin McMurray</b><span>Carpenter</span></div>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <span class="k2">In their words</span><h2 class="h2">4.8 stars from 23 Google reviews.</h2>
+    <div class="revs">
+      <div><p>"Brian is also great with follow up!!"</p><cite>Philipp Mayhew · Sunriver</cite></div>
+      <div><p>"John and Chris did a fabulous job removing our old deck and installing our new Trex deck with a cable railing."</p><cite>Karen Gnass · Trex deck</cite></div>
+      <div><p>"Brian provided the lowest of three bids, and together with the quality of the installation, we received exceptional value."</p><cite>Steve Lidston · Hardie siding</cite></div>
+    </div>
+  </div></section>
+  <section class="q"><div class="wrap">
+    <div><span class="k2">Start here</span><h2 class="h2">Book a custom design meeting and free estimate.</h2><p>Bend, Redmond, Sisters, Sunriver, La Pine, Prineville, Tumalo and Powell Butte.</p></div>
+    <form><label>Name<input id="f-n"></label><label>Phone<input id="f-p"></label><label>Project<select id="f-s"><option>Fence</option><option>Deck</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label><button type="submit">Book my meeting with Brian</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><span>Bend Fence &amp; Deck · (541) 647-7086 · info@bendfenceanddeck.com</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= G · BUILT TO LAST ================= -->
+<div class="mock mE" id="m-g" hidden>
+  <div class="util"><div class="wrap"><span>Bend, Redmond &amp; all of Central Oregon</span><span>info@bendfenceanddeck.com · <b>(541) 647-7086</b></span></div></div>
+  <div class="wrap top"><img src="img/logo.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Home</a><a>Services</a><a>About</a><a>Reviews</a><a>Contact</a></nav><div class="right"><a class="tel">(541) 647-7086</a><a class="est">Free Estimate →</a></div></div>
+  <div class="hero"><div class="wrap">
+    <span class="pill">Central Oregon's family-owned fence &amp; deck builder</span>
+    <h1 class="pf">Your Backyard, <span>Built for Bend.</span></h1>
+    <p>Fences, decks and covered patios designed with you and built to stand up to High Desert winters. Every project starts with a custom design meeting and a free written estimate.</p>
+    <div class="btns"><a class="b1">Book My Design Meeting →</a><a class="b2">Call (541) 647-7086</a></div>
+    <div class="tr"><span>4.8 on Google</span><span>Licensed · CCB #204674</span><span>Family-owned</span><span>Building year-round</span></div>
+  </div></div>
+  <div class="bar"><div class="wrap">
+    <div><i>★</i><span><b>4.8-Star Rated</b><small>23 Google reviews</small></span></div>
+    <div><i>⌂</i><span><b>Family-Owned</b><small>Brian Wallace &amp; family</small></span></div>
+    <div><i>✓</i><span><b>Licensed in Oregon</b><small>CCB #204674</small></span></div>
+    <div><i>❄</i><span><b>Year-Round Builds</b><small>Winter is open for booking</small></span></div>
+  </div></div>
+  <section class="story"><div class="wrap">
+    <div class="col"><div class="big"><img src="img/covered-patio-timber-frame-night.webp" alt="Timber-frame covered patio"></div><div class="sm"><div class="ph">Family photo<br>(from Jess)</div></div></div>
+    <div><span class="eb">Our story</span>
+      <h2 class="pf h2">We Don't Just Build Decks. <span>We Build for Neighbors.</span></h2>
+      <p>Bend Fence &amp; Deck is locally owned and operated by Brian Wallace and his family, with over 25 years of combined experience. Brian has called Bend home for more than 30 years.</p>
+      <p>Brian sits down with you to design the project, helps you pick materials and colors, and stays in touch until the last board is down. Our crew keeps a clean site every day.</p>
+      <p class="sig">Brian Wallace, owner</p></div>
+  </div></section>
+  <section><div class="wrap center">
+    <span class="eb">What we build</span>
+    <h2 class="pf h2">From First Sketch to Final Board</h2>
+    <p class="lead">Fences and decks are what we're known for, plus the outdoor projects that go with them.</p>
+    <div class="cards">
+      <a class="card"><div class="pic"><img src="img/fence-black-horizontal-modern.webp" alt=""></div><div class="t"><h3>Fences</h3><p>Cedar privacy, horizontal, ranch, metal and corrugated.</p><em>Learn more →</em></div></a>
+      <a class="card"><div class="pic"><img src="img/deck-composite-picture-frame-border.webp" alt=""></div><div class="t"><h3>Decks</h3><p>New builds, replacements and repairs in Trex, TimberTech or wood.</p><em>Learn more →</em></div></a>
+      <a class="card"><div class="pic"><img src="img/pergola-stained-cedar-patio.webp" alt=""></div><div class="t"><h3>Covered Patios</h3><p>Pergolas, timber-frame covers and front porches.</p><em>Learn more →</em></div></a>
+      <a class="card"><div class="pic"><img src="img/porch-covered-stone-columns.webp" alt=""></div><div class="t"><h3>Siding &amp; Windows</h3><p>Hardie, cedar and shake siding, plus window replacement.</p><em>Learn more →</em></div></a>
+    </div>
+  </div></section>
+  <section class="proj"><div class="wrap center">
+    <span class="eb">Our work</span>
+    <h2 class="pf h2">Projects We're Proud Of</h2>
+    <div class="pg" style="width:100%">
+      <div class="t2"><img src="img/deck-gray-black-rail-juniper.webp" alt=""></div>
+      <div class="w2"><img src="img/fence-cedar-horizontal-side-yard.webp" alt=""></div>
+      <div><img src="img/fence-cedar-privacy-snow.webp" alt=""></div>
+      <div><img src="img/pergola-red-cedar-pine-yard.webp" alt=""></div>
+      <div class="w2"><img src="img/deck-composite-black-rail-patio-set.webp" alt=""></div>
+    </div>
+  </div></section>
+  <section><div class="wrap center">
+    <span class="eb">Testimonials</span>
+    <h2 class="pf h2">Real Results from Real Neighbors</h2>
+    <div class="tg">
+      <div class="tc"><div class="st">★★★★★</div><p>"The entire project from Brian's first visit, through demolition, to the finish was excellently executed… All of the work was done in January."</p><cite><i>JJ</i><span>John Jordan<small>Trex deck replacement, Bend</small></span></cite></div>
+      <div class="tc"><div class="st">★★★★★</div><p>"Their pricing was competitive, but the experience felt premium. I would hire them again in a heartbeat!"</p><cite><i>AB</i><span>Amber Boyle<small>Trex deck</small></span></cite></div>
+      <div class="tc"><div class="st">★★★★★</div><p>"They ripped out an old wrap around deck at our place in Sunriver and rebuilt it beautifully. Brian is also great with follow up!!"</p><cite><i>PM</i><span>Philipp Mayhew<small>Deck rebuild, Sunriver</small></span></cite></div>
+    </div>
+  </div></section>
+  <section class="ns"><div class="wrap center">
+    <span class="eb">Why Bend Fence &amp; Deck</span>
+    <h2 class="pf h2">No Surprises. Just Great Work.</h2>
+    <div class="feat">
+      <div><i>✎</i><span><b>Custom Design Meeting</b><p>Brian helps you plan the layout, materials and colors.</p></span></div>
+      <div><i>$</i><span><b>Free Written Estimate</b><p>A clear number before anything starts, with no pressure.</p></span></div>
+      <div><i>◷</i><span><b>On Schedule</b><p>Customers say we show up when we say we will.</p></span></div>
+      <div><i>✓</i><span><b>Clean Site, Every Day</b><p>The yard gets cleaned up at the end of each workday.</p></span></div>
+      <div><i>❄</i><span><b>We Build in Winter</b><p>Design and build now, enjoy it the first warm weekend.</p></span></div>
+      <div><i>⌂</i><span><b>Licensed in Oregon</b><p>CCB #204674. Serving Bend and the surrounding towns.</p></span></div>
+    </div>
+  </div></section>
+  <section class="contact"><div class="wrap">
+    <div><span class="eb">Get started</span><h2 class="pf h2" style="color:#fff">Ready to Build? Let's Talk.</h2>
+      <p class="lead">Book a custom design meeting and free estimate. We serve Bend, Redmond, Sisters, Sunriver, La Pine, Prineville, Tumalo and Powell Butte.</p>
+      <ul><li>Brian walks the yard with you</li><li>Help choosing materials and colors</li><li>Written estimate, no pressure</li></ul></div>
+    <form><h3>Book Your Design Meeting</h3>
+      <div class="two"><label>Name<input id="e-n"></label><label>Phone<input id="e-p"></label></div>
+      <label>Project<select id="e-s"><option>Fence</option><option>Deck</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label>
+      <label>Town<input id="e-t" placeholder="Bend"></label>
+      <button type="submit">Book My Design Meeting →</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></section>
+  <footer><div class="wrap"><img src="img/logo-light.png" alt=""><span>(541) 647-7086 · info@bendfenceanddeck.com</span><span>Oregon CCB #204674</span></div></footer>
+</div>
+
+<!-- ================= H · FAST QUOTE ================= -->
+<div class="mock mD" id="m-h" hidden>
+  <div class="util"><div class="wrap"><span>Serving Bend, Redmond, Sisters, Sunriver, La Pine &amp; Prineville</span><span>Oregon CCB #204674</span></div></div>
+  <div class="wrap top"><img src="img/logo.png" alt="Bend Fence &amp; Deck"><nav class="nav"><a>Fences</a><a>Decks</a><a>Patios</a><a>Siding</a><a>Reviews</a></nav><div class="phone"><small>Call or text</small><b>(541) 647-7086</b></div></div>
+  <div class="hero"><div class="wrap">
+    <div><span class="pill">Now booking winter builds</span>
+      <h1>Bend's 4.8-star fence &amp; deck builder</h1>
+      <p>Custom fences, composite and wood decks, and covered patios, built by a local family crew.</p>
+      <ul class="ticks"><li>Free custom design meeting &amp; estimate</li><li>Trex, TimberTech, cedar and metal</li><li>Clean job site every single day</li></ul></div>
+    <form class="card"><h2>Book your free design meeting</h2>
+      <div class="two"><label>Name<input id="d-n"></label><label>Phone<input id="d-p"></label></div>
+      <label>Project<select id="d-s"><option>Fence</option><option>Deck</option><option>Covered patio / pergola</option><option>Siding / windows</option></select></label>
+      <label>Town<input id="d-t" placeholder="Bend"></label>
+      <button type="submit">Get my free estimate →</button><span class="formnote">Mockup only. The live form sends straight to your CRM.</span></form>
+  </div></div>
+  <div class="trust"><div class="wrap"><div><b>4.8 ★</b><span>23 Google reviews</span></div><div><b>Licensed</b><span>Oregon CCB #204674</span></div><div><b>Local</b><span>Family owned &amp; operated</span></div><div><b>Year-round</b><span>We build through winter</span></div></div></div>
+  <section><div class="wrap">
+    <h2 class="h2">Our services</h2><p class="sub">Pick a project to see examples, materials and what to expect.</p>
+    <div class="svc">
+      <a class="sv"><div class="pic"><img src="img/fence-dark-horizontal-board-pines.webp" alt=""></div><div class="t"><b>Fence installation</b><span>Cedar privacy, horizontal, ranch, metal</span><em>Learn more →</em></div></a>
+      <a class="sv"><div class="pic"><img src="img/deck-composite-two-tone-black-rail.webp" alt=""></div><div class="t"><b>Deck building</b><span>New decks, replacements, repairs</span><em>Learn more →</em></div></a>
+      <a class="sv"><div class="pic"><img src="img/covered-deck-mountain-view.webp" alt=""></div><div class="t"><b>Covered patios</b><span>Pergolas, covered decks, porches</span><em>Learn more →</em></div></a>
+      <a class="sv"><div class="pic"><img src="img/porch-covered-stone-columns.webp" alt=""></div><div class="t"><b>Siding &amp; windows</b><span>Hardie, cedar, shake, windows</span><em>Learn more →</em></div></a>
+    </div>
+  </div></section>
+  <section class="how"><div class="wrap">
+    <h2 class="h2">How it works</h2><p class="sub">Three steps from first call to finished project.</p>
+    <div class="steps"><div><i>1</i><b>Book a design meeting</b><p>Fill out the form or call. We'll set a time that works.</p></div><div><i>2</i><b>Get a written estimate</b><p>Brian helps you choose materials and colors, then prices it.</p></div><div><i>3</i><b>We build it</b><p>On schedule, cleaned up daily, walked through with you at the end.</p></div></div>
+  </div></section>
+  <section><div class="wrap">
+    <h2 class="h2">4.8 stars from 23 Google reviews</h2><p class="sub">Copied word for word from Google.</p>
+    <div class="revs">
+      <div class="rv"><div class="st">★★★★★</div><p>"Quick response to initial inquiry and providing an estimate, as well as fitting us right into their schedule."</p><cite>Tabi Sheldon · Fence</cite></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"I highly recommend this firm…their cost was well less than a competitor's bid too."</p><cite>Wendy Edde · Deck</cite></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"The gentlemen who did the work were efficient, talented and cleaned up the job site perfectly."</p><cite>Catheryn Oakland · Deck</cite></div>
+    </div>
+  </div></section>
+  <section style="padding-top:0"><div class="wrap">
+    <h2 class="h2">Recent projects</h2><p class="sub">All real Bend Fence &amp; Deck jobs.</p>
+    <div class="gal">
+      <div><img src="img/fence-black-horizontal-modern-2.webp" alt=""></div><div><img src="img/deck-composite-black-rail-front.webp" alt=""></div><div><img src="img/fence-corrugated-metal-cedar-frame.webp" alt=""></div><div><img src="img/pergola-red-cedar-pine-yard.webp" alt=""></div>
+    </div>
+  </div></section>
+  <section class="final"><div class="wrap">
+    <h2 class="h2">Ready to plan your project?</h2><p>Book a free custom design meeting. Brian will walk the yard with you and give you a written estimate.</p><a>Book my free design meeting</a>
+  </div></section>
+  <footer><div class="wrap"><div><b>Bend Fence &amp; Deck</b>Family owned fence, deck and outdoor living builder for Central Oregon. Oregon CCB #204674.</div><div><b>Contact</b>(541) 647-7086<br>info@bendfenceanddeck.com</div><div><b>Service area</b>Bend, Redmond, Sisters, Sunriver, La Pine, Prineville</div></div></footer>
+  <div class="sticky"><a>Call now</a><a>Free estimate</a></div>
+</div>
+
+
+    </div>
+  </div>
+
+  <div class="why" id="why"></div>
+
+  <div>
+    <h2 class="section-h">Side by side</h2>
+    <div class="compare"><table><thead><tr><th></th><th>A · Workshop</th><th>B · Timber &amp; Basalt</th><th>C · Cascade Outdoor</th><th>D · Blueprint</th><th>E · Project Files</th><th>F · Letter from Brian</th><th>G · Built to Last</th><th>H · Fast Quote</th></tr></thead><tbody><tr><td><b>Feels like</b></td><td>A crew that builds things</td><td>A Pacific Northwest lodge</td><td>A Bend outdoor brand</td><td>An architect who builds</td><td>A contractor with nothing to hide</td><td>A family business with a name on it</td><td>An established family builder</td><td>A company that answers fast</td></tr><tr><td><b>What builds trust</b></td><td>Bold brand + big photos</td><td>A written standard, each point proven by a review</td><td>Lifestyle and the seasons</td><td>Process, precision and spec sheets</td><td>Job-by-job proof</td><td>Brian's personal accountability</td><td>Trust bar, story, reviews</td><td>Badges and speed</td></tr><tr><td><b>Top-of-market pricing</b></td><td>Strong</td><td>Strong</td><td>Medium</td><td>Strongest</td><td>Strong</td><td>Strong</td><td>Strong</td><td>Weakest</td></tr><tr><td><b>Best for</b></td><td>Brand recall</td><td>Buyers comparing quality</td><td>Younger active families</td><td>Big, custom projects</td><td>Researchers reading reviews</td><td>People who hire the owner</td><td>A safe, proven layout</td><td>Most calls, fastest</td></tr><tr><td><b>Needs from you</b></td><td>Wide job photos</td><td>Brian on-site photo</td><td>Lifestyle photos (people using decks)</td><td>Project facts per job</td><td>Photos + details per job</td><td>Brian's letter in his words</td><td>Family photo</td><td>Nothing new</td></tr></tbody></table></div>
+  </div>
+
+  <div class="same">
+    <h2>The same in every option</h2>
+    <ul>
+      <li>Separate pages for fences, decks, covers, siding and windows, plus each town</li>
+      <li>Every form goes straight into your CRM and texts Jessica</li>
+      <li>Correct phone, CCB #204674, and service area everywhere</li>
+      <li>No roofing template leftovers, no AI photos</li>
+      <li>Fast on phones, built for Google and AI search</li>
+      <li>The offer: custom design meeting &amp; free estimate</li>
+    </ul>
+  </div>
+  <p class="note" style="text-align:center">Prepared by MoreJobCalls.com · Draft for Bend Fence &amp; Deck review · Not for public distribution</p>
+</div>
+<script>
+(function(){
+  var why={"a": ["Homeowners who want the company that looks most capable. It makes you look like the biggest builder in town.", "Dark sites can feel heavy on bright phone screens, and it needs strong wide photos.", "You want people to remember the name."], "b": ["Buyers comparing three bids on quality. Each promise in the standard is backed by a customer's own words, which is hard for a competitor to copy.", "Darker and moodier, so it depends on warm, well-lit photos.", "You want craftsmanship to be the reason people pick you."], "c": ["Bend's active homeowners who buy the lifestyle, not the lumber. The seasons strip makes the winter-build pitch obvious.", "Least traditional. Some older buyers may want more proof up front.", "You want to feel like Bend, not like a contractor."], "d": ["Higher-end clients planning bigger projects. It sells the design meeting itself and shows real project specs, which reads as expertise.", "Needs the facts for each featured job (size, materials, timeline).", "You want to raise prices and attract bigger, custom jobs."], "e": ["The researcher who reads every review. Every job shows where, what and the homeowner's words, so trust is earned job by job.", "Only as strong as the job details Jess can gather. Needs ongoing photo and info collection.", "You want proof to do the selling."], "f": ["People who hire the owner. Putting Brian's name and signature on a promise is a strong trust signal for a family company.", "Brian has to be comfortable being the face, and the letter must be in his words.", "You want Brian's reputation to be the brand."], "g": ["Homeowners who want an established, trustworthy family builder. Same layout as the Paynter Construction site, in Bend's blue with a gold accent.", "The two clients' sites will feel related by design. Colors and photos keep them distinct.", "You liked the Paynter site and want that proven layout."], "h": ["People who are ready now and want a quick answer. The most direct path to a booked design meeting.", "Converts well but looks like a lot of contractor sites.", "You want the most calls next month and can refine the look later."]};
+  var keys=Object.keys(why);
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function show(v){
+    if(!why[v]) v='a';
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.v===v?'true':'false')});
+    keys.forEach(function(k){var m=document.getElementById('m-'+k); if(m) m.hidden=(k!==v)});
+    var w=why[v];
+    document.getElementById('why').innerHTML='<div><h3>Who it\u2019s for</h3><p>'+w[0]+'</p></div><div><h3>Trade-off</h3><p>'+w[1]+'</p></div><div><h3>Choose it if</h3><p>'+w[2]+'</p></div>';
+    document.getElementById('vp').scrollTop=0;
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){ if(location.hash!=='#option-'+t.dataset.v){location.hash='option-'+t.dataset.v}else{show(t.dataset.v)} })});
+  function fromHash(){var m=/^#option-([a-h])$/.exec(location.hash);show(m?m[1]:'a')}
+  window.addEventListener('hashchange',fromHash); fromHash();
+  var b=document.getElementById('browser'),d=document.getElementById('sz-desk'),p=document.getElementById('sz-phone');
+  d.onclick=function(){b.classList.remove('phone');d.setAttribute('aria-pressed','true');p.setAttribute('aria-pressed','false')};
+  p.onclick=function(){b.classList.add('phone');p.setAttribute('aria-pressed','true');d.setAttribute('aria-pressed','false')};
+  document.querySelectorAll('.mock form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var n=f.querySelector('.formnote');if(n){n.textContent='Mockup only. Nothing was sent.'}})});
+})();
+</script>
+</body>
+</html>

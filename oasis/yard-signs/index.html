@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Oasis Neighbor Signs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; sign faces and mockups break wider on a lawn-green ground band */
+:root{
+  --bg:#FBF9F5; --fg:#26241F; --muted:#6B665D; --line:#E6DFD2; --card:#FFFFFF;
+  --teal:#175B5D; --teal-2:#3E9EA0; --coral:#C95C36; --lawn:#E9EFE4; --ok:#2E7D4F; --warn:#A56A00;
+  --display:Fraunces,Georgia,serif; --body:Figtree,system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141A1A; --fg:#ECE8E0; --muted:#A39E94; --line:#2C3534; --card:#1B2322;
+  --teal:#7CC7C8; --teal-2:#5DB3B5; --coral:#EE8A63; --lawn:#18231D; --ok:#6FCB94; --warn:#E2B04F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141A1A; --fg:#ECE8E0; --muted:#A39E94; --line:#2C3534; --card:#1B2322;
+  --teal:#7CC7C8; --teal-2:#5DB3B5; --coral:#EE8A63; --lawn:#18231D; --ok:#6FCB94; --warn:#E2B04F; color-scheme:dark}
+*{box-sizing:border-box}
+html{color-scheme:light}
+@media (prefers-color-scheme: dark){html{color-scheme:dark}}
+img{max-width:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wide{max-width:1180px}
+header{padding-block:56px 28px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--coral)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,58px);line-height:1.04;letter-spacing:-.02em;margin:.25em 0 .35em;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(25px,3.6vw,34px);line-height:1.12;letter-spacing:-.015em;margin:0 0 .5em;text-wrap:balance}
+h3{font-size:18px;font-weight:800;margin:0 0 .3em}
+p{margin:0 0 1em}
+.lede{font-size:20px;color:var(--muted);max-width:62ch}
+section{padding-block:40px;border-top:1px solid var(--line)}
+.band{background:var(--lawn);border-top:0}
+.hero-img{display:block;width:100%;border-radius:6px;margin-top:8px}
+.cap{font-size:13.5px;color:var(--muted);margin-top:8px}
+.hz p{font-size:18px;margin:0 0 .55em}
+.hz strong{color:var(--coral)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+.tbl{overflow-x:auto;margin:14px 0 6px}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td.n{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.src{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:20px}
+.piece{min-width:0}
+.piece img{display:block;width:100%;border-radius:4px;box-shadow:0 1px 0 var(--line),0 10px 28px -14px rgba(0,0,0,.35)}
+.piece h3{margin-top:14px}
+.piece p{font-size:15.5px;margin:0 0 .4em}
+.tag{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1px solid currentColor;margin-right:6px;vertical-align:2px}
+.tag.ok{color:var(--ok)}.tag.warn{color:var(--warn)}
+.riders{display:grid;gap:12px;margin-top:14px}
+.riders img{display:block;width:100%;border-radius:3px}
+.rider-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;align-items:center}
+.rider-row p{font-size:15px;margin:0}
+.hanger{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:28px;align-items:start;margin-top:10px}
+.hanger img{width:100%;border-radius:4px;box-shadow:0 10px 28px -14px rgba(0,0,0,.35)}
+.mock{display:grid;gap:26px;margin-top:18px}
+.mock figure{margin:0}
+.mock img{display:block;width:100%;border-radius:6px}
+ol.steps{padding-left:1.2em;margin:0}
+ol.steps li{margin:0 0 .7em;padding-left:.2em}
+ol.steps b{color:var(--teal)}
+.asks li{margin:0 0 .6em}
+.files a{color:var(--teal);font-weight:700}
+.next{background:var(--teal);color:var(--bg);border-radius:6px;padding:26px 26px 22px;margin-top:6px}
+.next .eyebrow{color:var(--bg);opacity:.8}
+.next p{font-size:19px;margin:.4em 0 0;font-weight:500}
+.spec td:first-child{font-weight:700;white-space:nowrap}
+footer{padding-block:30px 60px;font-size:13.5px;color:var(--muted)}
+code{font-family:var(--mono);font-size:.88em;overflow-wrap:anywhere}
+li,p,td{overflow-wrap:break-word}
+.wrap{min-width:0}
+@media (max-width:620px){.rider-row,.hanger{grid-template-columns:1fr}.hanger img{max-width:220px}}
+</style>
+</head><body>
+
+<header class="wrap">
+  <div class="eyebrow">Oasis Custom Decks · yard sign kit v1 · 4 Nov 2026</div>
+  <h1>Every build is a billboard on the buyer's own street.</h1>
+  <p class="lede">Two yard signs, three riders and one door hanger. They turn each Oasis job site into booked custom design meetings with the neighbors. Built from Oasis's confirmed facts only.</p>
+  <img class="hero-img" src="img/mock-B-after-build.jpg" alt="Oasis 'Ask your neighbor how it went' yard sign with 'Our own crew. Never subbed out.' rider, staked in the lawn in front of a finished brown composite deck">
+  <div class="cap">Mockup on a real Oasis job (Hermitage). On a live job the sign goes in the front yard, facing the street.</div>
+</header>
+
+<section class="wrap hz">
+  <div class="eyebrow">The Hormozi read</div>
+  <h2>The constraint is in-area leads. Signs can't reach anyone else.</h2>
+  <p>Look at the numbers. Meta in-area CPL went from <strong>$50 to $112</strong> in 30 days. 43 of the last 65 survey leads were out of area.</p>
+  <p>That's an M1 problem in the 6M framework: market. The ads are reaching the wrong people.</p>
+  <p>A yard sign has a 100% in-area hit rate. Everyone who sees it lives on a street Oasis already builds on.</p>
+  <p>Same house values. Same HOA. Same lot shape. Same neighbor who just watched a $50K deck go up in four days.</p>
+  <p>Core Four says your cheapest lead is the one a happy customer hands you. The sign is how the customer hands it over without lifting a finger.</p>
+  <p>Don't overthink the design. One headline. One offer. One phone number. Make it readable from a car.</p>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">The math</div>
+  <h2>One neighbor job pays for every sign for years.</h2>
+  <div class="tbl"><table>
+    <tr><th>Input</th><th>Number</th><th>Source</th></tr>
+    <tr><td>Average job</td><td class="n">≈ $50,000</td><td class="src">Jake's estimate, 5 Oct 2026</td></tr>
+    <tr><td>Jobs won, Mar–Oct 2026</td><td class="n">30 (≈ 45 / yr pace)</td><td class="src">CRM, 21 Oct CMO report</td></tr>
+    <tr><td>Booked meeting → won</td><td class="n">≈ 9%</td><td class="src">330 meetings → 30 won</td></tr>
+    <tr><td>Kit cost per job</td><td class="n">≈ $35</td><td class="src">2 signs + rider + 20 hangers, estimate</td></tr>
+    <tr><td>Kit cost per year</td><td class="n">≈ $1,600</td><td class="src">45 jobs × $35</td></tr>
+    <tr><td>Breakeven</td><td class="n">1 job</td><td class="src">One win ≈ 31× a year of signs</td></tr>
+    <tr><td>Booked meetings needed for one win</td><td class="n">≈ 11 / yr</td><td class="src">At the ad close rate. Neighbor leads should close higher.</td></tr>
+  </table></div>
+  <p class="src">That's one booked neighbor meeting for every four jobs. Print prices are estimates until a print shop quotes them.</p>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">Value Equation, applied to a piece of coroplast</div>
+  <h2>Why each line is on the sign</h2>
+  <div class="tbl"><table>
+    <tr><th>Lever</th><th>What the sign does</th></tr>
+    <tr><td><b>Dream outcome</b> ↑</td><td>"Want a deck like this one?" The proof is standing in the yard. It costs nothing to imagine it in their own yard.</td></tr>
+    <tr><td><b>Likelihood</b> ↑</td><td>"Ask your neighbor how it went." The strongest proof is a person they can walk over and ask. Navy veteran owned, our own crew, licensed + insured.</td></tr>
+    <tr><td><b>Time delay</b> ↓</td><td>"Building here this week." Real urgency: the crew is already on the street. No fake countdowns.</td></tr>
+    <tr><td><b>Effort</b> ↓</td><td>A 10-second QR scan or one phone number. The offer is the custom design meeting + free estimate, not a bare "free estimate".</td></tr>
+  </table></div>
+</section>
+
+<section class="band">
+  <div class="wrap wide">
+    <div class="eyebrow">The kit · print-ready faces</div>
+    <h2>Two signs, one for each phase</h2>
+    <div class="grid">
+      <div class="piece">
+        <img src="img/A-build-front.jpg" alt="Sign A: Building here this week. Want a deck like this one? Free custom design meeting plus estimate for neighbors. 724-888-7288 and QR code">
+        <h3>Sign A · during the build</h3>
+        <p><span class="tag ok">Ready</span>Goes in on day one and comes out on the last day.</p>
+        <p>Curiosity plus real urgency. The neighbors watch it go up all week.</p>
+      </div>
+      <div class="piece">
+        <img src="img/B-built-front.jpg" alt="Sign B: Just built by Oasis. Ask your neighbor how it went. The good part's out back, scan to see it. 724-888-7288 and QR code">
+        <h3>Sign B · 30 days after</h3>
+        <p><span class="tag warn">Needs homeowner yes</span>Goes in on the last day and stays up 30 days.</p>
+        <p>Most decks are out back, where the street can't see them. The QR shows the finished deck. If the homeowner doesn't want neighbors asking, swap the headline to <i>"Just built. The good part's out back."</i></p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px">Riders · 24 × 6 in, clip on top</h2>
+    <div class="riders">
+      <div class="rider-row"><img src="img/R1-own-crew.jpg" alt="Rider: Our own crew. Never subbed out."><p><span class="tag ok">Ready</span>Jake confirmed "never subbed out" on 20 Oct. This is the default rider.</p></div>
+      <div class="rider-row"><img src="img/R2-google.jpg" alt="Rider: five stars, 4.8 on Google"><p><span class="tag warn">Verify before print</span>The 31 reviews scraped 15 Oct average 4.84. Check the live Google rating on print day.</p></div>
+      <div class="rider-row"><img src="img/R3-spring.jpg" alt="Rider: Booking spring 2027 builds now"><p><span class="tag warn">Jake's yes</span>Real seasonal pressure for winter jobs, but only if spring slots really are filling. Never fake scarcity.</p></div>
+    </div>
+
+    <h2 style="margin-top:44px">Door hanger · the sign's partner</h2>
+    <div class="hanger">
+      <img src="img/H-door-hanger.jpg" alt="Door hanger: Pardon the saws. We're building your neighbor's new deck this week. Free custom design meeting plus estimate. QR, phone, signed Jake and the Oasis crew">
+      <div>
+        <p><span class="tag warn">Name check</span>The crew hangs it on the 20 nearest doors on day one. A sign works on drive-bys. The hanger reaches the neighbors who hear the saws.</p>
+        <p>The apology for the noise opens it, the design meeting offer closes it. It's warm outreach that reads as a courtesy note.</p>
+        <p class="src">Signed "Jake & the Oasis crew". Jacob or Jake on bylines is still an open question in the business file.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap wide">
+  <div class="eyebrow">In the yard</div>
+  <h2>Mockups on real Oasis jobs</h2>
+  <div class="mock">
+    <figure><img src="img/mock-A-during-build.jpg" alt="Sign A staked on the lawn beside an elevated deck mid-construction with exposed framing"><figcaption class="cap">Sign A next to an elevated build with the framing still showing.</figcaption></figure>
+    <figure><img src="img/mock-B-rider-google.jpg" alt="Sign B with Google rating rider on the lawn beside a covered composite deck with white posts"><figcaption class="cap">Sign B with the Google rider (Raynish job). Placement is for illustration only. Live signs face the street.</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">Rollout · per job</div>
+  <h2>The routine the crew runs</h2>
+  <ol class="steps">
+    <li><b>At contract signing.</b> Jake asks: "Mind if we put our sign out front during the build and for a month after? And can neighbors ask you how it went?" Two yeses, logged on the job.</li>
+    <li><b>Day one.</b> Sign A goes in by the street, 3 ft back from the sidewalk. 20 door hangers go on the nearest doors: both sides of the street and the backyard neighbors.</li>
+    <li><b>Last day.</b> Swap A for B and clip on the rider. Snap one photo of the sign with the finished deck. It goes on the /neighbor page and into the GBP posts.</li>
+    <li><b>Day 30.</b> The crew picks up Sign B, or leaves it if the homeowner asks to keep it. Reuse the signs. Only the QR sticker changes per job.</li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">Tracking · so we know it works</div>
+  <h2>Every sign gets its own code</h2>
+  <ul class="asks">
+    <li><b>QR →</b> <code>oasiscustomdecks.com/neighbor/?s=&lt;job&gt;</code>. That page doesn't exist yet and needs building. It shows that street's project photos plus the design meeting booking calendar. The mock QRs point there now.</li>
+    <li><b>Phone.</b> Put a dedicated sign tracking number in place of 724-888-7288 before printing. Calls then land in the CRM tagged "Yard sign" automatically.</li>
+    <li><b>Read-out.</b> Yard-sign bookings go in the weekly report as their own row. Judge it at 90 days: booked meetings per sign placed.</li>
+  </ul>
+</section>
+
+<section class="wrap" id="where-to-buy">
+  <div class="eyebrow">Where to buy · the ordering gameplan</div>
+  <h2>Pick the design, then two clicks for Jake</h2>
+  <p>Spencer builds the carts with the final files. Jake gets a proof and a pay link, then approves and pays. Prices are estimates from vendor pages read on 4 Nov, so confirm them in the cart.</p>
+  <div class="tbl"><table class="spec">
+    <tr><th>What</th><th>Buy from</th><th>Why there</th></tr>
+    <tr><td>Signs A + B, riders, H-stakes</td><td><b>YardSignPlus</b><br><span class="src">primary</span></td><td>Its published file spec matches our files (150 DPI at size, 0.125 in bleed, PNG). It sends a free digital proof in about an hour, offers "See design, pay later", saves designs for reorders, takes 1–5 business days door to door, and ships free over $50.</td></tr>
+    <tr><td>Same items, faster</td><td><b>Signs.com</b><br><span class="src">backup</span></td><td>Next-business-day production, free shipping over $99. Riders are under Real Estate Riders, 24 × 6 coroplast. That page showed "out of stock" on 4 Nov.</td></tr>
+    <tr><td>Rush, a job starts tomorrow</td><td><b>The UPS Store, Cranberry Twp</b></td><td>20436 Rte 19, Ste 620 · (724) 772-6250. Does corrugated H-stake yard signs. Walk in with the files.</td></tr>
+    <tr><td>Door hangers</td><td><b>GotPrint</b></td><td>Stocks the 4.25 × 11 size on 14 pt gloss with High Gloss UV. Choose "Full Color Front, Blank Back". It takes 0.125 in bleed at 350 DPI, our file's spec.</td></tr>
+  </table></div>
+
+  <h3 style="margin-top:26px">Round 1 order</h3>
+  <div class="tbl"><table>
+    <tr><th>Item</th><th>Qty</th><th>Estimate</th></tr>
+    <tr><td>Signs A + B, 24 × 18, 4 mm coroplast, double-sided, same art both sides, with H-stakes</td><td class="n">10 + 10</td><td class="n">$400 – $700</td></tr>
+    <tr><td>Rider R1, 24 × 6, double-sided</td><td class="n">10</td><td class="n">$150 – $350</td></tr>
+    <tr><td>Door hangers, 4.25 × 11, 14 pt gloss UV</td><td class="n">500</td><td class="n">$100 – $310</td></tr>
+    <tr><td><b>Total</b></td><td></td><td class="n">≈ $650 – $1,360</td></tr>
+  </table></div>
+
+  <h3 style="margin-top:26px">Print files, upload-ready</h3>
+  <ul class="asks files">
+    <li><a href="print/A-build-front.png">Sign A</a> · 24 × 18 in + 0.125 in bleed · 150 ppi</li>
+    <li><a href="print/B-built-front.png">Sign B</a> · 24 × 18 in + bleed · 150 ppi</li>
+    <li><a href="print/R1-own-crew.png">Rider R1</a> · <a href="print/R2-google.png">R2</a> · <a href="print/R3-spring.png">R3</a> · 24 × 6 in + bleed · 150 ppi</li>
+    <li><a href="print/H-door-hanger.png">Door hanger</a> · 4.25 × 11 in + bleed · 350 ppi. The top is left clear for the printer's die-cut hole.</li>
+  </ul>
+  <p class="src">These are drafts. They get re-exported with the final copy and the tracking number before anyone orders.</p>
+
+  <h3 style="margin-top:26px">The flow</h3>
+  <ol class="steps">
+    <li><b>Design locked.</b> Jake answers the five asks below. The /neighbor page goes live so the QR codes work, and the sign tracking number goes on the files.</li>
+    <li><b>Spencer builds the YardSignPlus order</b> with "See design, pay later" and Jake's email on it. Jake gets the proof and a pay link. He approves and pays.</li>
+    <li><b>Door hangers.</b> GotPrint has no pay-later. Spencer either orders on the MJC card and bills it, or sends Jake a direct link with the file already uploaded.</li>
+    <li><b>Ship to</b> 300 Northpointe Cir, Seven Fields, PA 16046, unless Jake wants them somewhere else.</li>
+    <li><b>Reorders</b> are one click from the saved order when the first ten run out.</li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">Open asks for Jake</div>
+  <h2>Five yes/no answers before printing</h2>
+  <ol class="steps">
+    <li>OK to ask every client for the sign during the build and for 30 days after? Should it go in the contract?</li>
+    <li>OK to put "Ask your neighbor how it went" on the sign, if the homeowner agrees?</li>
+    <li>Are spring 2027 build dates really filling? That decides rider R3.</li>
+    <li>"Jake" or "Jacob" on the door hanger?</li>
+    <li>A dedicated tracking number for signs: yes? And where should the boxes ship?</li>
+  </ol>
+  <p class="src" style="margin-top:12px">Not on the sign on purpose: no neighbor discount and no referral fee. Both are Tier 2 promises. They need Jake's yes and a line in his contract before any copy says them. They're worth testing in round 2 if round 1 is slow.</p>
+  <p class="src">Also check: HOA and township sign rules in Cranberry, Seven Fields and Mars. Most allow contractor signs during active work, and some limit how long they stay up afterward.</p>
+</section>
+
+<section class="wrap">
+  <div class="next">
+    <div class="eyebrow">Next 48 hours</div>
+    <p>Send Jake the five questions today. When he says yes, build the YardSignPlus order with pay-later so all he does is approve the proof and pay. Stake the first sign on the next job that starts.</p>
+  </div>
+</section>
+
+<footer class="wrap">Built from the Oasis business file (confirmed facts dated 20–21 Oct 2026), the 21 Oct CMO report and the 30 Oct targeting doc. Mock QR codes point to a page that doesn't exist yet.</footer>
+
+</body></html>

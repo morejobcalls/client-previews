@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellar Roofing and Exteriors — UGC Shoot Script</title>
+<style>
+  :root{
+    --ink:#1c2530;
+    --slate:#2f3e4e;
+    --muted:#6b7888;
+    --accent:#b8860b;       /* swap per brand */
+    --accent-soft:#fbf3e0;
+    --line:#e4e8ee;
+    --bg:#f4f6f9;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px 80px;}
+  header{background:linear-gradient(135deg,#0d1b2e 0%,#1f3a5f 100%);color:#fff;padding:48px 40px 40px;border-radius:6px;margin-top:32px;margin-bottom:36px;}
+  .brandrow{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+  .logo{width:46px;height:46px;border-radius:9px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;color:#fff;letter-spacing:-1px;box-shadow:0 4px 14px rgba(184,134,11,.4);}
+  .brandname{font-weight:700;font-size:17px;letter-spacing:.5px;text-transform:uppercase;}
+  .brandsub{font-size:12px;color:#aebccd;letter-spacing:2px;text-transform:uppercase;}
+  header h1{margin:0 0 10px;font-size:30px;line-height:1.2;letter-spacing:-.5px;}
+  header .lead{margin:0;color:#cfdae6;font-size:15px;max-width:600px;}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+  .chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:5px 12px;border-radius:30px;font-size:12px;color:#e7eef5;}
+  .thesis{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:6px;padding:18px 22px;margin:0 0 38px;font-size:14.5px;}
+  .thesis strong{color:var(--accent);}
+  section{margin:0 0 46px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:22px;}
+  .sec-head h2{margin:0;font-size:20px;letter-spacing:-.3px;}
+  .sec-head .count{font-size:13px;color:var(--muted);font-weight:600;}
+  .sec-note{font-size:13px;color:var(--muted);margin:-12px 0 22px;}
+  .line{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px 16px 16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 1px 2px rgba(20,30,45,.04);}
+  .num{flex:0 0 auto;min-width:34px;height:34px;border-radius:7px;background:var(--slate);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;}
+  .num.body{background:var(--accent);}
+  .num.cta{background:#d4860b;}
+  .line .body-text{flex:1;}
+  .label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;}
+  .script{font-size:16.5px;line-height:1.5;color:var(--ink);}
+  .script em{color:var(--accent);font-style:italic;}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px;}
+  .panel h3{margin:0 0 10px;font-size:15px;}
+  .panel ul{margin:0;padding-left:18px;}
+  .panel li{margin-bottom:8px;font-size:14px;}
+  code{background:#eef1f5;padding:2px 6px;border-radius:4px;font-size:12.5px;color:var(--slate);}
+  .mathbar{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;background:var(--ink);color:#fff;border-radius:8px;padding:18px;margin-bottom:22px;font-size:15px;}
+  .mathbar b{color:#ffd27a;font-size:20px;}
+  .copyblock{border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin-bottom:16px;background:var(--card);}
+  .copyblock .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:12px;}
+  .copyrow{margin-bottom:8px;font-size:14px;}
+  .copyrow b{color:var(--slate);}
+  /* Recording best-practices "start here" panel — ALWAYS include this, verbatim, on every client shoot doc */
+  .howto{background:#fff;border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:8px;padding:26px 28px;margin:0 0 34px;box-shadow:0 2px 8px rgba(20,30,45,.06);}
+  .howto .kicker{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px;}
+  .howto h2{margin:0 0 6px;font-size:22px;letter-spacing:-.3px;}
+  .howto .intro{font-size:14.5px;color:var(--slate);margin:0 0 22px;}
+  .howto .rule{border-top:1px solid var(--line);padding:16px 0 4px;}
+  .howto .rule:first-of-type{border-top:none;padding-top:4px;}
+  .howto .rule h3{margin:0 0 8px;font-size:16px;display:flex;align-items:center;gap:8px;}
+  .howto .rule h3 .tag2{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#fff;background:var(--slate);padding:2px 8px;border-radius:12px;}
+  .howto .rule h3 .tag2.hot{background:var(--accent);}
+  .howto ul{margin:0;padding-left:20px;}
+  .howto li{margin-bottom:7px;font-size:14px;line-height:1.5;}
+  .howto li b{color:var(--ink);}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:50px;border-top:1px solid var(--line);padding-top:20px;}
+  @media print{body{background:#fff;}.line,.panel,.copyblock{box-shadow:none;break-inside:avoid;}header{background:#23303d !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}.num,.mathbar,.thesis,.logo,.chip,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+  code,.script,.copyrow{overflow-wrap:anywhere;}
+  html,body{overflow-x:hidden;}
+  @media (max-width:600px){.wrap{padding:0 16px 60px;}header{padding:28px 20px 24px;}header h1{font-size:24px;}.howto{padding:20px 18px;}.panel{padding:18px;}.line{padding:14px 12px;}.mathbar{font-size:13px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brandrow">
+      <div class="logo">SR</div>
+      <div>
+        <div class="brandname">Stellar Roofing and Exteriors</div>
+        <div class="brandsub">Atlanta, GA · Roofing Video Scripts · v1</div>
+      </div>
+    </div>
+    <h1>Don's Roofing Video Ad Scripts</h1>
+    <p class="lead">Short vertical videos for Atlanta homeowners thinking about a new roof. You record once and we turn it into 60 different ads, then let homeowners show us which ones work.</p>
+    <div class="meta">
+      <span class="chip">📱 9:16 Vertical</span>
+      <span class="chip">🎙️ Talking Head</span>
+      <span class="chip">⏱️ 17 clips to record</span>
+      <span class="chip">🧩 60 possible ads</span>
+    </div>
+  </header>
+
+  <div class="howto">
+    <span class="kicker">📋 Read this first · 2 minutes</span>
+    <h2>How to record this (you've got this)</h2>
+    <p class="intro">You don't need to be a videographer or memorize anything. Every numbered line in this doc is its own <b>short, separate clip</b> — just work down the list and record them one at a time on your phone. Follow the four rules below and you'll nail it. When in doubt, do 2–3 takes and we'll pick the best.</p>
+
+    <div class="rule">
+      <h3>🔊 Audio <span class="tag2 hot">Most important</span></h3>
+      <ul>
+        <li><b>This matters more than how the video looks.</b> Bad audio is the #1 thing that kills a clip — clear audio is the #1 thing that saves it.</li>
+        <li><b>Record somewhere quiet.</b> No fans, AC, TV, traffic, or wind. Big empty rooms echo — a normal furnished room sounds better.</li>
+        <li><b>Use a clip-on mic if you can.</b> Nothing tanks an ad faster than bad audio. If you don't have a mic, <a href="https://www.amazon.com/dp/B0DWKBWFCK" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">these are the ones I use</a>: inexpensive, great reviews, and they plug straight into your phone. You don't have to get these, any decent mic works, as long as the audio is clear.</li>
+        <li><b>Check your phone's port before you order.</b> That link is the <b>USB-C</b> version (iPhone 15 and newer, most Android phones). iPhone 14 or older uses <b>Lightning</b>, so pick the Lightning option on the same page. Order it now so it's there by the time you film.</li>
+        <li><b>No mic yet?</b> Wired earbuds with the built-in mic work, or keep the phone about an arm's length away, not across the room.</li>
+        <li><b>Test before you commit.</b> Record 10 seconds, play it back, make sure your voice is crisp — <b>then</b> record the rest.</li>
+      </ul>
+    </div>
+
+    <div class="rule">
+      <h3>📱 Shoot vertical</h3>
+      <ul>
+        <li><b>Hold the phone upright (portrait), never sideways.</b> If it's filmed horizontal we can't use it for Reels/Stories/TikTok.</li>
+        <li><b>Frame yourself from mid-chest up</b>, eyes in the upper third, a little space above your head.</li>
+        <li><b>Keep it steady.</b> Prop the phone against something or have someone hold it — no shaky, walking-and-talking handheld.</li>
+      </ul>
+    </div>
+
+    <div class="rule">
+      <h3>💡 Lighting</h3>
+      <ul>
+        <li><b>Light on your face, not behind you.</b> Face the window or the sun — never stand with a bright window/sky behind you (that turns you into a shadow).</li>
+        <li><b>Outdoors:</b> open shade or early-morning / late-afternoon light is gold. Avoid harsh midday sun that makes you squint and casts hard shadows.</li>
+        <li><b>Indoors:</b> face a window, add a lamp if it's dim. Even, natural light beats a dark "cinematic" look every time.</li>
+      </ul>
+    </div>
+
+    <div class="rule">
+      <h3>🎬 Record modular (this is what makes it easy)</h3>
+      <ul>
+        <li><b>One line = one clip.</b> Don't try to perform the whole ad in a single take. Say one numbered line, stop, record the next. We assemble them afterward.</li>
+        <li><b>Stay consistent the whole session</b> — same shirt, same spot, same framing — so any clip snaps together with any other. This is the secret to the 60-ad system.</li>
+        <li><b>Mess up? No problem.</b> Just re-record that one line. Give us 2–3 takes of each and we'll grab the best one.</li>
+        <li><b>Talk to one person</b> — imagine a neighbor across the fence, not "a camera." Real and natural beats polished. Pauses are totally fine.</li>
+        <li><b>Suggested order:</b> record every piece top to bottom — all 10 hooks, then the 3 bodies, then the 2 CTAs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="thesis"><strong>The whole message in one line:</strong> Homeowners aren't scared of the price. They're scared of the roofer who takes the deposit and disappears. Stellar is the opposite: Diamond Pro work backed up to 25 years, every step photographed, and a company that's clearly here to stay.</div>
+
+  <section>
+    <div class="sec-head"><h2>🎬 Record it in one take</h2></div>
+    <div class="panel"><ul>
+      <li><b>One recording, top to bottom.</b> Before each piece, say its name out loud ("Hook 3", "Body B", "CTA 2"), pause one second, then go.</li>
+      <li><b>Flubbed a line?</b> Pause two seconds and start that sentence over. We keep the last clean take. No need to stop recording.</li>
+      <li><b>Record every piece:</b> all 10 hooks (Hook 1 three times with the different towns), all 3 bodies, and both CTAs. We mix and match them into different ads, so we need them all.</li>
+      <li><b>Upload to Basecamp</b> → Photos &amp; Videos when you're done. Straight from your phone is fine.</li>
+    </ul></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>✅ Check these before you record</h2></div>
+    <div class="panel"><ul><li><b>&quot;Diamond Pro&quot; and &quot;about the top five percent in the whole country.&quot;</b> Meat A. Straight from our call. If you&#x27;d rather name the manufacturer, say it the way your certificate does.</li><li><b>&quot;Up to twenty-five years, backed by the manufacturer.&quot;</b> Meat A and the ad copy. Say &quot;up to&quot; every time, since not every roof gets the top warranty.</li><li><b>&quot;Over a hundred Google reviews, an A-plus with the Better Business Bureau.&quot;</b> Meat C and the ad copy. We&#x27;ll double-check your live Google count and BBB grade before launch. If either changes, tell us.</li><li><b>&quot;Five and a half years in.&quot;</b> Meat C. From our call. Use your real number if it&#x27;s changed.</li><li><b>&quot;Our reps get you a quote before they leave your driveway.&quot;</b> Meat B and CTA 1. You said reps should have the quote before they leave. Only keep it if that&#x27;s how it goes on every appointment.</li><li><b>Hook 3: &quot;around eight thousand dollars.&quot;</b> From our call: you market around $7K to $9K, and most jobs land at $13K and up. The hook never promises $8K. It says picking the roofer matters more. If you&#x27;d rather not say a number, skip this one.</li><li><b>Hook 1: the towns.</b> We guessed three sets of towns across your service area. Swap in whichever neighborhoods you want the most roofs from.</li><li><b>No financing or insurance lines in the ads.</b> We kept them out on purpose. Facebook rejects ads that talk about financing, and insurance claims are a sales conversation. Bring both up at the appointment.</li></ul></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>🎯 How to say it</h2></div>
+    <div class="panel"><ul>
+      <li><b>Talk to one homeowner</b>, not a crowd. Picture one customer you protected from a bad roofer and say it to them.</li>
+      <li><b>Hooks: word for word.</b> We test them against each other, so the exact words matter.</li>
+      <li><b>Bodies: your own words.</b> Know the beats and tell it like you would at the kitchen table.</li>
+      <li><b>Always finish the CTA</b> with "Let's talk." Don't drop it to keep a clip short. It's the line that gets people to book.</li>
+      <li><b>Stand in front of a finished roof or a wrapped truck</b> if you can, in good light, same shirt and spot the whole time.</li>
+    </ul></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>🎣 Hooks</h2><span class="count">≤30 words each · record all 10 (+2 town takes)</span></div>
+    <p class="sec-note">The first line people hear. Say them word for word. Any hook works with any body, so you don't need to match them up.</p>
+    <div class="line"><div class="num">1</div><div class="body-text"><div class="label">Geo callout (record 3x, swap towns) · 21 words</div><div class="script">"Marietta, Roswell, Alpharetta. If your roof is getting up there in age, don&#x27;t call a single roofer until you&#x27;ve heard this."</div><div class="label" style="margin-top:8px;text-transform:none;letter-spacing:0">Record this one 3 times: take 2 swap in <b>Decatur, Tucker, Stone Mountain</b>, take 3 swap in <b>Lawrenceville, Snellville, Buford</b>. Swap in whichever towns you want the most roofs from.</div></div></div>
+    <div class="line"><div class="num">2</div><div class="body-text"><div class="label">The deposit fear · 27 words</div><div class="script">"Before you hand any roofer a deposit, stop. The scariest part of a new roof isn&#x27;t the price. It&#x27;s wondering if they&#x27;ll still be around next year."</div></div></div>
+    <div class="line"><div class="num">3</div><div class="body-text"><div class="label">Starting at eight thousand? · 29 words</div><div class="script">"Can you get a new roof in Atlanta for around eight thousand dollars? Sometimes, yes. But picking the roof is the easy part. Picking the roofer is what matters."</div></div></div>
+    <div class="line"><div class="num">4</div><div class="body-text"><div class="label">Comparing roof quotes · 30 words</div><div class="script">"If you&#x27;re comparing roof quotes and the price is the only thing you&#x27;re looking at, don&#x27;t sign yet. Most homeowners have no idea what to look for in a roofer."</div></div></div>
+    <div class="line"><div class="num">5</div><div class="body-text"><div class="label">Burned before · 24 words</div><div class="script">"Thinking about a new roof, but you&#x27;ve been burned by a contractor before? This one&#x27;s for you. Your roof shouldn&#x27;t feel like a gamble."</div></div></div>
+    <div class="line"><div class="num">6</div><div class="body-text"><div class="label">Chuck in a truck · 23 words</div><div class="script">"Atlanta, there are a lot of chuck-in-a-truck roofers out there. Here today, gone tomorrow. Before you let anyone on your roof, watch this."</div></div></div>
+    <div class="line"><div class="num">7</div><div class="body-text"><div class="label">Myth-bust: honest roofer · 26 words</div><div class="script">"Everybody says you can&#x27;t find an honest roofer in Atlanta anymore. I get why people say it. I just don&#x27;t agree. Here&#x27;s what to look for."</div></div></div>
+    <div class="line"><div class="num">8</div><div class="body-text"><div class="label">The trust question · 18 words</div><div class="script">"How do you know if a roofer is actually trustworthy, before they ever climb up on your roof?"</div></div></div>
+    <div class="line"><div class="num">9</div><div class="body-text"><div class="label">Cheap roof done twice · 28 words</div><div class="script">"The most expensive roof you can buy is the cheap one done wrong. Here&#x27;s how to tell a real roofer from a cheap one, before you sign anything."</div></div></div>
+    <div class="line"><div class="num">10</div><div class="body-text"><div class="label">Your biggest investment · 22 words</div><div class="script">"Your roof protects the biggest investment you&#x27;ll ever make. So before you pick a roofer, here&#x27;s what you should actually be asking."</div></div></div>
+    </section>
+
+  <section>
+    <div class="sec-head"><h2>🥩 Bodies — "The Meat"</h2><span class="count">≤110 words each · record all 3</span></div>
+    <p class="sec-note">Body A is your Diamond Pro warranty. Body B is how you photograph every step and get the quote out before you leave. Body C is why Stellar is here to stay. Know the beats, then say it your way.</p>
+    <div class="line"><div class="num body">A</div><div class="body-text"><div class="label">A — Protection: Diamond Pro, up to 25 years · 105 words</div><div class="script">"Here&#x27;s what most people don&#x27;t know. Most roofers can&#x27;t offer a real workmanship warranty. And if they can, it usually tops out around ten years. We&#x27;re a Diamond Pro contractor with our manufacturer. That&#x27;s about the top five percent in the whole country. To get there, the manufacturer audits our jobs, and we have to stay in good standing with them, our supplier, and our homeowners. That&#x27;s why we can protect our work for up to twenty-five years, backed by the manufacturer. If you just want the cheapest quote, we can do that too. But most people choose us because they want their investment protected."</div></div></div>
+    <div class="line"><div class="num body">B</div><div class="body-text"><div class="label">B — Proof: every step photographed · 93 words</div><div class="script">"We document everything, start to finish. The first time we come out, we photograph your whole roof and build you a profile. Then the whole job gets photographed. Materials arriving, old shingles coming off, bad plywood replaced, underlayment, new shingles, cleanup. So whether you&#x27;re home or not, you see exactly what was done. No second-guessing. Share it with family, or your insurance company. And you won&#x27;t wait weeks for a number. Our reps get you a quote before they leave your driveway. Fair price, done right, and you can see it for yourself."</div></div></div>
+    <div class="line"><div class="num body">C</div><div class="body-text"><div class="label">C — Here to stay: wrapped trucks, 100+ reviews, A+ · 98 words</div><div class="script">"When you pick a roofer, you&#x27;re picking who stands behind that roof years from now. Our senior reps drive fully wrapped trucks. That&#x27;s us investing in this company, because we plan on being here. Five and a half years in, we&#x27;ve got over a hundred Google reviews, an A-plus with the Better Business Bureau, and nothing but good feedback online. Go read the lowest reviews on anybody you&#x27;re considering. That tells you a lot. And when we come out, we listen first. Some folks want the most protection, some want the best price. We&#x27;ll tailor it to you."</div></div></div>
+    </section>
+
+  <section>
+    <div class="sec-head"><h2>📣 Calls To Action</h2><span class="count">≤34 words each · record both</span></div>
+    <div class="line"><div class="num cta">1</div><div class="body-text"><div class="label">1 — Soft / free inspection + photo report · 32 words</div><div class="script">"Let us come take a look. A free roof inspection, a photo report of everything we find, and your quote before we leave. No pressure. Tap the link below and let&#x27;s talk."</div></div></div>
+    <div class="line"><div class="num cta">2</div><div class="body-text"><div class="label">2 — Direct / pick a time · 32 words</div><div class="script">"If you want your roof done right and protected for years, tap the link below, answer a few quick questions, and pick a time. Our team will call to confirm. Let&#x27;s talk."</div></div></div>
+    </section>
+
+  <section>
+    <div class="sec-head"><h2>🧩 How It Comes Together</h2></div>
+    <div class="mathbar"><span>10 Hooks</span>×<span>3 Bodies</span>×<span>2 CTAs</span>=<b>60 Ads</b></div>
+    <div class="panel"><ul>
+      <li><b>Shoot order:</b> all hooks back-to-back (same wardrobe/spot), then bodies, then CTAs.</li>
+      <li><b>Consistency:</b> identical wardrobe/setting so any hook edits onto any body.</li>
+      <li><b>Delivery:</b> talk to one person, not a camera. Authentic beats polished.</li>
+      <li><b>Naming:</b> <code>STELLAR_ROOF_H03</code> · <code>STELLAR_ROOF_M01</code> · <code>STELLAR_ROOF_CTA01</code> → <code>STELLAR_ROOF_FIN_H03-M01-CTA01</code></li>
+      <li><b>Test plan:</b> hold body + CTA constant, rotate hooks first; lock winners, then test bodies.</li>
+    </ul></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>📝 Ad Copy (Post Text)</h2><span class="count">pick one per ad</span></div>
+    <div class="copyblock"><span class="tag">Option A — Protection for your investment (pairs with Meat A)</span><div class="copyrow"><b>Primary:</b><br>A new roof is one of the biggest checks you'll ever write.<br><br>So the real question isn't just the price. It's who's going to stand behind it.<br><br>We're Stellar Roofing and Exteriors, a Diamond Pro contractor with our manufacturer, here in Atlanta:<br><br>✅ Workmanship protected for up to 25 years, backed by the manufacturer<br>✅ Every step of your job photographed, start to finish<br>✅ Your quote before we leave your driveway<br>✅ 100+ Google reviews · A+ with the BBB<br><br>Tap "Learn More" to request your free roof inspection and photo report.<br><br>-Don<br>Stellar Roofing and Exteriors</div><div class="copyrow"><b>Headline:</b> Protect the Biggest Investment You Own</div><div class="copyrow"><b>Description:</b> Diamond Pro Roofer · Atlanta Metro</div><div class="copyrow"><b>Button:</b> Learn More</div></div>
+    <div class="copyblock"><span class="tag">Option B — See every step (pairs with Meat B)</span><div class="copyrow"><b>Primary:</b><br>Ever wonder what actually happens up on your roof while you're at work?<br><br>With us, you don't have to wonder.<br><br>We photograph your roof on day one, then every step of the job: materials, tear-off, plywood, underlayment, new shingles, cleanup.<br><br>You see exactly what was done. Share it with family or your insurance company.<br><br>And you won't wait weeks for a number. You get your quote before we leave.<br><br>Tap "Learn More" to request your free roof inspection and photo report.<br><br>-Don<br>Stellar Roofing and Exteriors</div><div class="copyrow"><b>Headline:</b> See Every Step of Your New Roof</div><div class="copyrow"><b>Description:</b> Free Inspection · Quote Before We Leave</div><div class="copyrow"><b>Button:</b> Learn More</div></div>
+    <div class="copyblock"><span class="tag">Option C — Here to stay (pairs with Meat C)</span><div class="copyrow"><b>Primary:</b><br>Here today, gone tomorrow. Every homeowner's fear with a roofer.<br><br>Here's how to spot the ones who'll still be around:<br><br>✅ Marked, wrapped trucks (not a magnet on a pickup)<br>✅ 100+ Google reviews. Read the lowest ones.<br>✅ A+ with the Better Business Bureau<br>✅ Years in business, not months<br><br>We're Stellar Roofing and Exteriors. Five and a half years serving Atlanta, and we plan on being here a lot longer.<br><br>Tap "Learn More" to request your free roof inspection and photo report.<br><br>-Don<br>Stellar Roofing and Exteriors</div><div class="copyrow"><b>Headline:</b> The Roofer Who&#x27;ll Still Be Here</div><div class="copyrow"><b>Description:</b> 100+ Google Reviews · A+ BBB · Atlanta</div><div class="copyrow"><b>Button:</b> Learn More</div></div>
+    </section>
+
+  <footer>Stellar Roofing and Exteriors × MoreJobCalls.com · Roofing Video Kit v1 · 2026-11-13</footer>
+
+</div>
+</body>
+</html>
